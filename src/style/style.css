@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* navbar */
+.navbar-fixed {
+  /* @apply fixed z-[999] bg-white bg-opacity-50 shadow-sm; */
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.hamburger-active > span:nth-child(1) {
+  /* @apply rotate-45 translate-x-0.5; */
+  transform: rotate(45deg) translateY(-1px);
+}
+.hamburger-active > span:nth-child(2) {
+  /* @apply scale-0; */
+  transform: scale(0);
+}
+
+.hamburger-active > span:nth-child(3) {
+  /* @apply -rotate-45 translate-y-1; */
+  transform: rotate(-45deg) translateY(4px);
+}
+
+.animasi-navbar {
+  transform: scale(0);
+  opacity: 0;
+  animation: scale 0.3s ease-in-out forwards;
+}
+
+/* hero */
+.hero-image {
+  background-image: url("../images/hero-contact/bg-jumbo.png");
+}
+
+/* gallery */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+/* waves */
+.custom-shape-divider-bottom-1718713171 {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1718713171 svg {
+  position: relative;
+  display: block;
+  width: calc(107% + 1.3px);
+  height: 153px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1718713171 .shape-fill {
+  fill: #ffffff;
+}
+
+/* animate */
+/* up down left : for astronot rocket */
+@keyframes up-down-left {
+  0%,
+  100% {
+    transform: translateY(-25%) translateY(-25px) translateX(-25px);
+  }
+  50% {
+    transform: none;
+  }
+}
+.animate-up-down-left {
+  animation: up-down-left 3s infinite;
+}
+
+/* up down : for astronot ballon dsb */
+@keyframes up-down {
+  0%,
+  100% {
+    transform: translateY(-40%);
+  }
+  50% {
+    transform: none;
+  }
+}
+.animate-up-down {
+  animation: up-down 4s infinite;
+}
+
+/* rotate-spin : for astronot star (slow) */
+@keyframes rotate-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-rotate-spin {
+  animation: rotate-spin 6s linear infinite;
+}
+.animate-earth {
+  animation: rotate-spin 50s linear infinite;
+}
+
+/* scroll : for line scroll auto */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-110%);
+  }
+}
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+/* scale : for navbar */
+@keyframes scale {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

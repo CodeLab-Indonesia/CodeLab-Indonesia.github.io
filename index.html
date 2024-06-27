@@ -1,0 +1,694 @@
+<!-- 
+!!!!!!!! THIS IS A VITAL RECORDS !!!!!!!!
+
+ NOTE :
+Please read the README first before starting! 
+please follow the step by step run locally in README.md
+
+Or click the link below: 
+https://github.com/MuhammadBobby/Lomba-ITechno-Cup-2024
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/images/assets/logo/favicon.png" />
+    <title>Code Lab Community</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CSS -->
+    <link rel="stylesheet" href="src/style/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+
+    <!-- myCss-->
+    <link rel="stylesheet" href="src/style/style.css" />
+    <link rel="stylesheet" href="src/style/lightbox.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden font-poppins">
+    <!-- navbar -->
+    <div class="top-0 left-0 flex items-center w-full fixed z-[999] font-montserrat font-normal" id="header" data-aos="fade-down" delay="500">
+      <div class="container">
+        <div class="relative flex items-center justify-between mx-3 lg:mx-5">
+          <div class="px-5">
+            <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="block py-3 text-lg font-bold cursor-pointer text-sky-500 lg:text-xl">
+              <img src="src/images/assets/logo/code-lab.png" alt="Code Lab" class="h-8 lg:w-20" />
+            </a>
+          </div>
+          <div class="flex items-center">
+            <a id="hamburger" name="hamburger" type="button" class="absolute block cursor-pointer right-4 lg:hidden">
+              <span class="w-[30px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out origin-top-left"></span>
+              <span class="w-[20px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out"></span>
+              <span class="w-[30px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out origin-bottom-left"></span>
+            </a>
+
+            <nav id="nav-menu" class="hidden absolute py-5 ps-5 bg-white shadow-lg rounded-md max-w-[200px] w-full right-5 top-10 lg:block lg:static lg:bg-transparent lg:rounded-none lg:max-w-full lg:shadow-none transition duration-300">
+              <ul id="nav" class="block lg:flex lg:justify-evenly">
+                <li class="group"><a href="#home" class="flex py-2 mx-8 text-base font-extrabold nav-item lg:underline lg:underline-offset-8 text-dark group-hover:text-secondary-yellow">Home</a></li>
+                <li class="group"><a href="#aboutUs" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">About Us</a></li>
+                <li class="group"><a href="#gallery" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Gallery</a></li>
+                <li class="group"><a href="#diy" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">DIY</a></li>
+                <li class="group"><a href="#other" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Other</a></li>
+                <li class="group"><a href="#contact" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <a href="" class="inline-block">
+            <img src="src/images/assets/github-dark.svg" alt="github-dark" class="hidden w-8 h-8 lg:block" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- hero / jumbotron -->
+    <section id="home" class="relative z-0 h-screen bg-center bg-no-repeat bg-cover hero-image">
+      <div class="max-w-screen-xl px-4 py-24 mx-auto text-center lg:py-32 lg:px-6">
+        <h1 id="hero" class="max-w-screen-md mx-auto mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl font-montserrat">
+          <!-- typeit -->
+          <!-- <span class="text-secondary-yellow">/</span> Join <span class="text-secondary-yellow">/</span> the Code Lab Community ! -->
+        </h1>
+        <p class="mb-8 font-light text-broke-white text-md lg:text-xl sm:px-16 lg:px-48" data-aos="fade-up" data-aos-delay="900">
+          <span class="underline underline-offset-4">Code Lab Community</span> is an open community for developers and makers to share their innovations & abilities in the field of technology.
+        </p>
+      </div>
+
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/earth.svg')] absolute top-[60%] right-5 scale-110 animate-earth" data-aos="zoom-in" data-aos-duration="2000"></div>
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/moon.svg')] absolute hidden md:block bottom-10 left-12"></div>
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/astronot/astronot-star.svg')] absolute hidden scale-125 md:block bottom-32 left-24 animate-rotate-spin" data-aos="fade-up"></div>
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/astronot/astronot-rocket.svg')] absolute bottom-16 left-[20%] md:left-[25%] animate-up-down-left" data-aos="fade-up-left" data-aos-delay="200"></div>
+    </section>
+    <!-- end hero -->
+
+    <!-- About Us -->
+    <section id="aboutUs" class="relative z-20 px-10 py-20 -mt-1 md:py-28 bg-primary md:px-20 lg:px-28">
+      <!--  Content -->
+      <div class="p-3 bg-white bg-opacity-25 rounded-md md:rounded-lg md:p-8 backdrop-blur-sm md:flex md:justify-around md:items-center">
+        <div class="md:w-[60%]">
+          <h1 class="text-2xl font-bold text-white font-montserrat md:text-4xl lg:text-5xl" data-aos="fade-down">About <span class="text-secondary-yellow">Us</span></h1>
+          <p class="mt-3 text-xs font-light text-broke-white md:font-md" data-aos="fade-up">
+            The Code Lab Community website offers various features such as the Project Gallery, where you can explore the latest innovations from community members, as well as the Project Tutorial (DIY) which provides step-by-step guides
+            for various technology projects. In addition, we also have blogs and community events designed to expand your network and deepen your technical knowledge.
+          </p>
+          <p class="mt-3 text-xs font-light text-broke-white md:font-md" data-aos="fade-up" data-aos-delay="50">
+            Code Lab Community was founded with the aim of being a gathering place for developers and makers from various backgrounds. This platform is designed to facilitate the sharing of knowledge, skills and innovation in the field of
+            technology. We are committed to providing a space where community members can learn from each other, exchange ideas, and collaborate on technology projects.
+          </p>
+          <p class="mt-3 text-xs font-light text-broke-white md:font-md" data-aos="fade-up" data-aos-delay="100">
+            Our vision is to create an inclusive and collaborative ecosystem where every member of the community feels valued and supported in developing their technical capabilities.
+          </p>
+        </div>
+        <div class="md:w-1/3" data-aos="fade-left" data-aos-delay="200">
+          <img src="src/images/assets/logo/code-lab.png" alt="Code Lab" class="w-2/3 mx-auto mt-8 md:mt-0 md:w-full" />
+        </div>
+      </div>
+
+      <!-- other -->
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/star/star-white.svg')] absolute left-0 scale-[0.3] md:scale-50 -top-20 animate-pulse"></div>
+    </section>
+    <!-- end About Us -->
+
+    <!-- animate scroll -->
+    <div class="relative flex gap-1 py-2 whitespace-nowrap">
+      <div class="flex items-center justify-around gap-10 pe-52 animate-scroll">
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Politeknik Negeri Medan</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Manejemen Informatika</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Politeknik Negeri Medan</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Manejemen Informatika</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Politeknik Negeri Medan</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Manejemen Informatika</p>
+      </div>
+      <div class="flex items-center justify-around gap-10 pe-52 animate-scroll">
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Politeknik Negeri Medan</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Manejemen Informatika</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Politeknik Negeri Medan</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Manejemen Informatika</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Politeknik Negeri Medan</p>
+        <img src="src/images/assets/logo/polmed.svg" alt="Polmed" class="h-8" />
+        <p class="text-sm font-semibold text-center md:text-base lg:text-lg text-primary">Manejemen Informatika</p>
+      </div>
+
+      <!-- open & close -->
+      <div class="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-broke-white md:w-48"></div>
+      <div class="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-broke-white md:w-48"></div>
+    </div>
+    <!-- animate scroll -->
+
+    <!-- gallery -->
+    <section id="gallery" class="relative z-20 px-10 py-20 bg-primary md:px-20 lg:px-28 md:py-28">
+      <!-- head -->
+      <div class="text-center">
+        <h1 class="text-2xl font-bold text-white font-montserrat md:text-4xl lg:text-5xl" data-aos="fade-down">Project <span class="text-secondary-yellow">Gallery</span></h1>
+        <p class="max-w-screen-sm mx-auto mt-2 text-xs text-broke-white" data-aos="fade-up" data-aos-delay="200">Explore the latest innovations and a gallery of featured projects from our community.</p>
+      </div>
+
+      <!-- content -->
+      <div class="flex flex-wrap items-center justify-center gap-5 mt-10 md:gap-3 lg:gap-5">
+        <!-- first gallery -->
+        <div class="relative w-2/3 overflow-hidden cursor-pointer md:w-1/3 lg:w-1/4 group" data-aos="fade-up">
+          <!-- image & lightbox -->
+          <a href="src/images/gallery/gallery-1.jpg" data-lightbox="models" data-title="UX Design by Procreator">
+            <img src="src/images/gallery/gallery-1.jpg" alt="image not found" title="Photo by Procreator UX Design Studio on Unsplash " class="w-full rounded-lg shadow-xl" />
+          </a>
+
+          <!-- hover content -->
+          <div class="absolute bottom-0 left-0 right-0 hidden py-3 text-xs text-center transition-all bg-gray-500 rounded-b-lg lg:block bg-opacity-35 backdrop-blur-sm group-hover:scale-0 group-hover:opacity-0">
+            <p class="text-broke-white">more</p>
+            <i class="fa-solid fa-down-long text-secondary-yellow"></i>
+          </div>
+
+          <div class="absolute left-0 flex items-end justify-between w-full p-4 text-white transition-all duration-300 bg-gray-500 rounded-b-lg -bottom-0 lg:-bottom-48 backdrop-blur-sm bg-opacity-30 group-hover:bottom-0">
+            <div>
+              <h3 class="text-base font-bold font-montserrat">UX Design by <span class="text-secondary-yellow">Procreator</span></h3>
+              <p class="text-xs font-extralight">Jakarta, Indonesia.</p>
+            </div>
+            <button class="p-2 text-xs border border-white rounded-lg bg-primary">2024</button>
+          </div>
+
+          <div class="absolute right-0 px-3 py-1 bg-gray-500 rounded-l-lg top-10 backdrop-blur-sm bg-opacity-30">
+            <p class="text-xs text-amber-400"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p>
+          </div>
+        </div>
+
+        <!-- second gallery -->
+        <div class="relative w-2/3 overflow-hidden cursor-pointer md:w-1/3 lg:w-1/4 group" data-aos="fade-up" data-aos-delay="100">
+          <!-- image & lightbox -->
+          <a href="src/images/gallery/gallery-2.jpg" data-lightbox="models" data-title="Programming Freelancer by Tai Bui">
+            <img src="src/images/gallery/gallery-2.jpg" alt="image not found" title="Photo by Tai Bui on Unsplash" class="w-full rounded-lg shadow-xl" />
+          </a>
+
+          <!-- hover content -->
+          <div class="absolute bottom-0 left-0 right-0 hidden py-3 text-xs text-center transition-all bg-gray-500 rounded-b-lg lg:block bg-opacity-35 backdrop-blur-sm group-hover:scale-0 group-hover:opacity-0">
+            <p class="text-broke-white">more</p>
+            <i class="fa-solid fa-down-long text-secondary-yellow"></i>
+          </div>
+
+          <div class="absolute left-0 flex items-end justify-between w-full p-4 text-white transition-all duration-300 bg-gray-500 rounded-b-lg -bottom-0 lg:-bottom-48 backdrop-blur-sm bg-opacity-30 group-hover:bottom-0">
+            <div>
+              <h3 class="text-base font-bold font-montserrat">Programming Freelancer by <span class="text-secondary-yellow">Tai Bui</span></h3>
+              <p class="text-xs font-extralight">Medan, Indonesia.</p>
+            </div>
+            <button class="p-2 text-xs border border-white rounded-lg bg-primary">2024</button>
+          </div>
+
+          <div class="absolute right-0 px-3 py-1 bg-gray-500 rounded-l-lg top-10 backdrop-blur-sm bg-opacity-30">
+            <p class="text-xs text-amber-400"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p>
+          </div>
+        </div>
+
+        <!-- third gallery -->
+        <div class="relative w-2/3 overflow-hidden cursor-pointer md:w-1/3 lg:w-1/4 group" data-aos="fade-up" data-aos-delay="200">
+          <!-- image & lightbox -->
+          <a href="src/images/gallery/gallery-3.jpg" data-lightbox="models" data-title="Coding Fashion by Arif Riyanto">
+            <img src="src/images/gallery/gallery-3.jpg" alt="image not found" title="Photo by Arif Riyanto on Unsplash" class="w-full rounded-lg shadow-xl" />
+          </a>
+
+          <!-- hover content -->
+          <div class="absolute bottom-0 left-0 right-0 hidden py-3 text-xs text-center transition-all bg-gray-500 rounded-b-lg lg:block bg-opacity-35 backdrop-blur-sm group-hover:scale-0 group-hover:opacity-0">
+            <p class="text-broke-white">more</p>
+            <i class="fa-solid fa-down-long text-secondary-yellow"></i>
+          </div>
+
+          <div class="absolute left-0 flex items-end justify-between w-full p-4 text-white transition-all duration-300 bg-gray-500 rounded-b-lg -bottom-0 lg:-bottom-48 backdrop-blur-sm bg-opacity-30 group-hover:bottom-0">
+            <div>
+              <h3 class="text-base font-bold font-montserrat">Coding Fashion by <span class="text-secondary-yellow">Arif Riyanto</span></h3>
+              <p class="text-xs font-extralight">Medan, Indonesia.</p>
+            </div>
+            <button class="p-2 text-xs border border-white rounded-lg bg-primary">2024</button>
+          </div>
+
+          <div class="absolute right-0 px-3 py-1 bg-gray-500 rounded-l-lg top-10 backdrop-blur-sm bg-opacity-30">
+            <p class="text-xs text-amber-400"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p>
+          </div>
+        </div>
+
+        <!-- fourth gallery -->
+        <div class="relative w-2/3 overflow-hidden cursor-pointer md:w-1/3 lg:w-1/4 group" data-aos="fade-up">
+          <!-- image & lightbox -->
+          <a href="src/images/gallery/gallery-4.jpg" data-lightbox="models" data-title="Cute Programmer by Tai Bui">
+            <img src="src/images/gallery/gallery-4.jpg" alt="image not found" title="Photo by Tai Bui on Unsplash" class="w-full rounded-lg shadow-xl" />
+          </a>
+
+          <!-- hover content -->
+          <div class="absolute bottom-0 left-0 right-0 hidden py-3 text-xs text-center transition-all bg-gray-500 rounded-b-lg lg:block bg-opacity-35 backdrop-blur-sm group-hover:scale-0 group-hover:opacity-0">
+            <p class="text-broke-white">more</p>
+            <i class="fa-solid fa-down-long text-secondary-yellow"></i>
+          </div>
+
+          <div class="absolute left-0 flex items-end justify-between w-full p-4 text-white transition-all duration-300 bg-gray-500 rounded-b-lg -bottom-0 lg:-bottom-48 backdrop-blur-sm bg-opacity-30 group-hover:bottom-0">
+            <div>
+              <h3 class="text-base font-bold font-montserrat">Cute Programmer by <span class="text-secondary-yellow">Tai Bui</span></h3>
+              <p class="text-xs font-extralight">Medan, Indonesia.</p>
+            </div>
+            <button class="p-2 text-xs border border-white rounded-lg bg-primary">2024</button>
+          </div>
+
+          <div class="absolute right-0 px-3 py-1 bg-gray-500 rounded-l-lg top-10 backdrop-blur-sm bg-opacity-30">
+            <p class="text-xs text-amber-400"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p>
+          </div>
+        </div>
+
+        <!-- fifth gallery -->
+        <div class="relative w-2/3 overflow-hidden cursor-pointer md:w-1/3 lg:w-1/4 group" data-aos="fade-up" data-aos-delay="100">
+          <!-- image & lightbox -->
+          <a href="src/images/gallery/gallery-5.jpg" data-lightbox="models" data-title="Setup Programming by Mikhail Fesenko">
+            <img src="src/images/gallery/gallery-5.jpg" alt="image not found" title="Photo by Mikhail Fesenko on Unsplash" class="w-full rounded-lg shadow-xl" />
+          </a>
+
+          <!-- hover content -->
+          <div class="absolute bottom-0 left-0 right-0 hidden py-3 text-xs text-center transition-all bg-gray-500 rounded-b-lg lg:block bg-opacity-35 backdrop-blur-sm group-hover:scale-0 group-hover:opacity-0">
+            <p class="text-broke-white">more</p>
+            <i class="fa-solid fa-down-long text-secondary-yellow"></i>
+          </div>
+
+          <div class="absolute left-0 flex items-end justify-between w-full p-4 text-white transition-all duration-300 bg-gray-500 rounded-b-lg -bottom-0 lg:-bottom-48 backdrop-blur-sm bg-opacity-30 group-hover:bottom-0">
+            <div>
+              <h3 class="text-base font-bold font-montserrat">Setup Programming by <span class="text-secondary-yellow">Mikhail Fesenko</span></h3>
+              <p class="text-xs font-extralight">NTT, Indonesia.</p>
+            </div>
+            <button class="p-2 text-xs border border-white rounded-lg bg-primary">2024</button>
+          </div>
+
+          <div class="absolute right-0 px-3 py-1 bg-gray-500 rounded-l-lg top-10 backdrop-blur-sm bg-opacity-30">
+            <p class="text-xs text-amber-400"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p>
+          </div>
+        </div>
+
+        <!-- sixth gallery -->
+        <div class="relative w-2/3 overflow-hidden cursor-pointer md:w-1/3 lg:w-1/4 group" data-aos="fade-up" data-aos-delay="200">
+          <!-- image & lightbox -->
+          <a href="src/images/gallery/gallery-6.jpg" data-lightbox="models" data-title="Morning Quote by Ben Kolde">
+            <img src="src/images/gallery/gallery-6.jpg" alt="image not found" title="Photo by Ben Kolde on Unsplash" class="w-full rounded-lg shadow-xl" />
+          </a>
+
+          <!-- hover content -->
+          <div class="absolute bottom-0 left-0 right-0 hidden py-3 text-xs text-center transition-all bg-gray-500 rounded-b-lg lg:block bg-opacity-35 backdrop-blur-sm group-hover:scale-0 group-hover:opacity-0">
+            <p class="text-broke-white">more</p>
+            <i class="fa-solid fa-down-long text-secondary-yellow"></i>
+          </div>
+
+          <div class="absolute left-0 flex items-end justify-between w-full p-4 text-white transition-all duration-300 bg-gray-500 rounded-b-lg -bottom-0 lg:-bottom-48 backdrop-blur-sm bg-opacity-30 group-hover:bottom-0">
+            <div>
+              <h3 class="text-base font-bold font-montserrat">Morning Quote by <span class="text-secondary-yellow">Ben Kolde</span></h3>
+              <p class="text-xs font-extralight">Makassar, Indonesia.</p>
+            </div>
+            <button class="p-2 text-xs border border-white rounded-lg bg-primary">2024</button>
+          </div>
+
+          <div class="absolute right-0 px-3 py-1 bg-gray-500 rounded-l-lg top-10 backdrop-blur-sm bg-opacity-30">
+            <p class="text-xs text-amber-400"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- other -->
+      <div class="my-5 text-center md:my-10" data-aos="fade-up">
+        <a href="pages/gallery.html" class="px-4 py-2 text-xs text-white rounded-full bg-secondary-yellow hover:bg-opacity-80 active:bg-opacity-60 md:text-base md:px-6">See more &raquo;</a>
+      </div>
+
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/star/star-white.svg')] absolute -top-10 right-[1%] scale-[0.3] animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/star/star-yellow.svg')] absolute top-16 left-[5%] hidden md:block scale-50 animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/star/star-white.svg')] absolute bottom-0 left-[1%] scale-[0.3] animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/astronot/astronot-rocket.svg')] absolute bottom-0 hidden right-10 md:block animate-up-down-left" data-aos="fade-up-left"></div>
+    </section>
+    <!-- end gallery -->
+
+    <!-- parallax -->
+    <div class="h-56 bg-center bg-no-repeat bg-cover bg-[url('src/images/assets/parallax.jpg')] md:h-72 lg:h-96 bg-fixed backdrop-brightness-90"></div>
+    <!-- parallax -->
+
+    <!-- DIY -->
+    <section id="diy" class="relative z-20 px-10 py-20 pb-32 md:py-28 bg-primary md:pb-48">
+      <!-- head -->
+      <div class="text-center md:px-20 lg:px-28">
+        <p class="text-sm text-secondary-yellow md:text-base" data-aos="fade-down" data-aos-delay="200" data-aos-easing="ease-in-out">DIY</p>
+        <h1 class="text-2xl font-bold text-white font-montserrat md:text-4xl lg:text-5xl" data-aos="fade-down">Project <span class="text-secondary-yellow">Tutorial</span></h1>
+        <p class="max-w-screen-sm mx-auto mt-2 text-xs text-broke-white" data-aos="fade-up" data-aos-delay="200">Step-by-step guides for various tutorial projects that will help you in developing a technology.</p>
+      </div>
+
+      <!-- content -->
+      <div class="flex w-full gap-5 my-10 overflow-x-scroll md:gap-7 flex-nowrap md:my-16 scrollbar-hide">
+        <!-- card 1 -->
+        <div class="rounded-lg shadow-md min-w-[90%] lg:min-w-[30%] md:min-w-[40%] bg-secondary-yellow hover:bg-opacity-90 flex flex-col justify-between" data-aos="fade-left">
+          <div>
+            <a href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/" rel="noopener" target="_blank" class="inline-block p-3">
+              <img class="rounded-lg" src="src/images/project/Centering-Element-With-CSS.jpg" alt="Centering-Element-With-CSS" />
+            </a>
+            <div class="p-5">
+              <a href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/" rel="noopener" target="_blank">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-montserrat">Centering Element With CSS</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700">In this tutorial, we'll go over how to center different elements horizontally, vertically, and both vertically and horizontally...</p>
+            </div>
+          </div>
+          <a href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/" rel="noopener" target="_blank" class="inline-flex items-center px-10 pb-5 text-blue-500 hover:text-blue-700">
+            Read more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- card 2 -->
+        <div class="rounded-lg shadow-md min-w-[90%] lg:min-w-[30%] md:min-w-[40%] bg-secondary-yellow hover:bg-opacity-90 flex flex-col justify-between" data-aos="fade-left" data-aos-delay="100">
+          <div>
+            <a href="https://medium.com/@nweligalla/another-5-next-level-css-tricks-to-enhance-your-web-design-a5d256eee99f" rel="noopener" target="_blank" class="inline-block p-3">
+              <img class="rounded-lg" src="src/images/project/5-Next-Level-CSS-Tricks.webp" alt="5-Next-Level-CSS-Tricks" />
+            </a>
+            <div class="p-5">
+              <a href="https://medium.com/@nweligalla/another-5-next-level-css-tricks-to-enhance-your-web-design-a5d256eee99f" rel="noopener" target="_blank">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-montserrat">5 Next-Level CSS Tricks</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700">I showed 5 cool CSS tricks that help you make beautiful web designs.Now, let’s explore five more cool tricks!...</p>
+            </div>
+          </div>
+          <a href="https://medium.com/@nweligalla/another-5-next-level-css-tricks-to-enhance-your-web-design-a5d256eee99f" rel="noopener" target="_blank" class="inline-flex items-center px-10 pb-5 text-blue-500 hover:text-blue-700">
+            Read more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- card 3 -->
+        <div class="rounded-lg shadow-md min-w-[90%] lg:min-w-[30%] md:min-w-[40%] bg-secondary-yellow hover:bg-opacity-90 flex flex-col justify-between" data-aos="fade-left" data-aos-delay="200">
+          <div>
+            <a href="https://www.create-learn.us/blog/how-to-make-ai-in-python-tutorial/" rel="noopener" target="_blank" class="inline-block p-3">
+              <img class="rounded-lg" src="src/images/project/How-to-Make-AI-in-Python-Tutorial.png" alt="How-to-Make-AI-in-Python-Tutorial" />
+            </a>
+            <div class="p-5">
+              <a href="https://www.create-learn.us/blog/how-to-make-ai-in-python-tutorial/" rel="noopener" target="_blank">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-montserrat">How to Make AI in Python Tutorial</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700">Python is commonly used to develop AI applications. One way that Python is used for human to computer interactions is through chatbots. Chatbots use artificial intelligence and...</p>
+            </div>
+          </div>
+          <a href="https://www.create-learn.us/blog/how-to-make-ai-in-python-tutorial/" rel="noopener" target="_blank" class="inline-flex items-center px-10 pb-5 text-blue-500 hover:text-blue-700">
+            Read more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- card 4 -->
+        <div class="rounded-lg shadow-md min-w-[90%] lg:min-w-[30%] md:min-w-[40%] bg-secondary-yellow hover:bg-opacity-90 flex flex-col justify-between" data-aos="fade-left" data-aos-delay="300">
+          <div>
+            <a href="https://medium.com/@studentofbharat/automate-whatsapp-message-using-python-1ed97488ee60" rel="noopener" target="_blank" class="inline-block p-3">
+              <img class="rounded-lg" src="src/images/project/Automate-WhatsApp-Message-using-Python.webp" alt="Automate-WhatsApp-Message-using-Python" />
+            </a>
+            <div class="p-5">
+              <a href="https://medium.com/@studentofbharat/automate-whatsapp-message-using-python-1ed97488ee60" rel="noopener" target="_blank">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-montserrat">Automate WhatsApp Message using Python</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700">Hey there, tech enthusiasts! Today, I’m thrilled to introduce you to an incredibly handy Python library that will make your messaging life a breeze — PyWhatKit...</p>
+            </div>
+          </div>
+          <a href="https://medium.com/@studentofbharat/automate-whatsapp-message-using-python-1ed97488ee60" rel="noopener" target="_blank" class="inline-flex items-center px-10 pb-5 text-blue-500 hover:text-blue-700">
+            Read more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- card 5 -->
+        <div class="rounded-lg shadow-md min-w-[90%] lg:min-w-[30%] md:min-w-[40%] bg-secondary-yellow hover:bg-opacity-90 flex flex-col justify-between" data-aos="fade-left" data-aos-delay="400">
+          <div>
+            <a href="https://blog.bitsrc.io/mini-game-using-only-html-css-and-javascript-b1707ef59475" rel="noopener" target="_blank" class="inline-block p-3">
+              <img class="rounded-lg" src="src/images/project/Mini-Game-Using-Only-HTML-CSS-and-JavaScript.webp" alt="Mini-Game-Using-Only-HTML-CSS-and-JavaScript" />
+            </a>
+            <div class="p-5">
+              <a href="https://blog.bitsrc.io/mini-game-using-only-html-css-and-javascript-b1707ef59475" rel="noopener" target="_blank">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-montserrat">Mini-Game Using Only HTML, CSS and JavaScript</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700">1st step, Start by creating an HTML file and open it in a text editor....</p>
+            </div>
+          </div>
+          <a href="https://blog.bitsrc.io/mini-game-using-only-html-css-and-javascript-b1707ef59475" rel="noopener" target="_blank" class="inline-flex items-center px-5 pb-5 text-blue-500 hover:text-blue-700">
+            Read more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- card 6 -->
+        <div class="rounded-lg shadow-md min-w-[90%] lg:min-w-[30%] md:min-w-[40%] bg-secondary-yellow hover:bg-opacity-90 flex flex-col justify-between" data-aos="fade-left" data-aos-delay="500">
+          <div>
+            <a href="https://www.malasngoding.com/membuat-pemutar-video-dengan-html/" rel="noopener" target="_blank" class="inline-block p-3">
+              <img class="rounded-lg" src="src/images/project/membuat-pemutar-video-pada-html5.png" alt="membuat-pemutar-video-dengan-html" />
+            </a>
+            <div class="p-5">
+              <a href="https://www.malasngoding.com/membuat-pemutar-video-dengan-html/" rel="noopener" target="_blank">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 font-montserrat">Creating a Video Player With HTML5</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700">Are you looking for a tutorial on how to make an online video player using only HTML? yep. Friend...</p>
+            </div>
+          </div>
+          <a href="https://www.malasngoding.com/membuat-pemutar-video-dengan-html/" rel="noopener" target="_blank" class="inline-flex items-center px-5 pb-5 text-blue-500 hover:text-blue-700">
+            Read more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Slider controls -->
+      <button id="scrollLeftBtn" type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev data-aos="fade-right">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" data-aos="fade-up" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button id="scrollRightBtn" type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next data-aos="fade-left">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" data-aos="fade-up" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+
+      <!-- other -->
+      <div class="my-5 text-center md:my-10" data-aos="fade-up">
+        <a href="pages/project.html" class="px-4 py-2 text-xs text-white rounded-full bg-secondary-yellow hover:bg-opacity-80 active:bg-opacity-60 md:text-base md:px-6">See more &raquo;</a>
+      </div>
+
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/star/star-white.svg')] absolute -top-10 right-[1%] scale-[0.3] animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('src/images/assets/astronot/astronot-ballon.svg')] absolute -bottom-10 left-[1%] md:left-[5%] z-50 md:scale-110 animate-up-down" data-aos="fade-up"></div>
+
+      <!-- waves -->
+      <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -bottom-2 rotate-180">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- end DIY -->
+
+    <!-- other -->
+    <section id="other" class="relative z-20 px-5 py-20 pt-32 md:py-28 md:pt-48">
+      <!-- head -->
+      <div class="text-center md:px-20 lg:px-28">
+        <p class="text-sm text-primary md:text-base" data-aos="fade-down" data-aos-delay="200" data-aos-easing="ease-in-out">OTHER</p>
+        <h1 class="text-2xl font-bold text-primary font-montserrat md:text-4xl lg:text-5xl" data-aos="fade-down">Other <span class="text-secondary-yellow">Menus</span></h1>
+      </div>
+
+      <!-- content -->
+      <div class="flex flex-wrap justify-center gap-5 mt-8 md:gap-10 md:mt-14">
+        <!-- event -->
+        <div class="flex flex-col justify-between w-2/3 md:w-1/3" data-aos="fade-right">
+          <a href="pages/event.html" class="block w-[200px] h-[200px] bg-[url('src/images/assets/callender.svg')] mx-auto md:scale-110"></a>
+          <div class="text-sm font-light text-center">
+            <h1 class="text-2xl font-bold font-montserrat md:text-3xl lg:text-4xl" data-aos="fade-down" data-aos-delay="15">Event Meet-Up</h1>
+            <p class="my-3" data-aos="fade-up" data-aos-delay="200">
+              Various information about upcoming meet-ups, hackathons, webinars and workshops so you can meet, compete healthily and innovate. We have listed various latest and interesting events here.
+            </p>
+
+            <a href="pages/event.html" class="inline-flex items-center px-5 pb-5 text-blue-500 hover:text-blue-700" data-aos="fade-up" data-aos-delay="200"> Read more &raquo; </a>
+          </div>
+        </div>
+
+        <!-- blog -->
+        <div class="flex flex-col justify-between w-2/3 md:w-1/3" data-aos="fade-left">
+          <a href="pages/blog.html" class="block w-[200px] h-[200px] bg-[url('src/images/assets/blog.svg')] mx-auto md:scale-110"></a>
+          <div class="text-sm font-light text-center">
+            <h1 class="text-2xl font-bold font-montserrat md:text-3xl lg:text-4xl" data-aos="fade-down" data-aos-delay="150">Blog / News</h1>
+            <p class="my-3" data-aos="fade-up" data-aos-delay="200">
+              Check out the latest articles, blogs and news related to the world of technology. Developments, changes and interesting things about the latest technology. You can see all the interesting news here.
+            </p>
+
+            <a href="pages/blog.html" class="inline-flex items-center px-5 pb-5 text-blue-500 hover:text-blue-700" data-aos="fade-up" data-aos-delay="200"> Read more &raquo; </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end other -->
+
+    <!-- contact -->
+    <section id="contact" class="relative z-20 px-5 py-20 md:px-20 lg:px-28 md:py-28">
+      <!-- head -->
+      <h1 class="text-2xl font-bold text-primary font-montserrat md:text-4xl lg:text-5xl" data-aos="fade-down">Contact <span class="text-secondary-yellow">Us</span></h1>
+
+      <!-- content -->
+      <div class="flex flex-wrap items-center justify-center gap-4 p-5 rounded-lg lg:gap-6 md:p-10 bg-primary" data-aos="fade-up">
+        <div class="w-full lg:w-1/3" data-aos="fade-left" data-aos-delay="100">
+          <img src="src/images/hero-contact/contact.png" alt="Contact" class="w-full rounded-md shadow-md" />
+        </div>
+
+        <div class="w-full text-white rounded-md lg:w-1/2" data-aos="fade-right">
+          <!-- github -->
+          <div class="my-5 lg:my-8">
+            <p class="text-base font-semibold md:text-lg text-secondary-yellow">Github</p>
+            <hr />
+            <div class="flex items-center gap-2 my-2 group">
+              <img src="src/images/assets/github-white.svg" alt="" class="w-5 h-5 md:w-10 md:h-10" />
+              <a href="https://github.com/MuhammadBobby/" rel="noopener" target="_blank" class="text-sm font-light group-hover:text-secondary-yellow">Muhammad Bobby</a>
+            </div>
+            <div class="flex items-center gap-2 my-2 group">
+              <img src="src/images/assets/github-white.svg" alt="" class="w-5 h-5 md:w-10 md:h-10" />
+              <a href="https://github.com/AuliyaIkhsanaNasution/" rel="noopener" target="_blank" class="text-sm font-light group-hover:text-secondary-yellow">Auliya Ikhsana Nasution</a>
+            </div>
+          </div>
+
+          <!-- instagram -->
+          <div class="my-5 lg:my-8" data-aos="fade-right" data-aos-delay="100">
+            <p class="text-base font-semibold md:text-lg text-secondary-yellow">Instagram</p>
+            <hr />
+            <div class="flex items-center gap-2 my-2 group">
+              <img src="src/images/assets/instagram-white.svg" alt="" class="w-5 h-5 md:w-10 md:h-10" />
+              <a href="https://instagram.com/code.lab_indonesia/" rel="noopener" target="_blank" class="text-sm font-light group-hover:text-secondary-yellow">code.lab_indonesia</a>
+            </div>
+          </div>
+
+          <!-- email -->
+          <div class="my-5 lg:my-8" data-aos="fade-right" data-aos-delay="200">
+            <p class="text-base font-semibold md:text-lg text-secondary-yellow">Email Address</p>
+            <hr />
+            <div class="flex items-center gap-2 my-2 group">
+              <img src="src/images/assets/email-white.svg" alt="" class="w-5 h-5 md:w-10 md:h-10" />
+              <a href="mailto:m.bobbyoktaviano@gmail.com" rel="noopener" target="_blank" class="text-sm font-light group-hover:text-secondary-yellow">m.bobbyoktaviano@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-2 my-2 group">
+              <img src="src/images/assets/email-white.svg" alt="" class="w-5 h-5 md:w-10 md:h-10" />
+              <a href="mailto:auliyanasti06@gmail.com" rel="noopener" target="_blank" class="text-sm font-light group-hover:text-secondary-yellow">auliyanasti06@gmail.com</a>
+            </div>
+          </div>
+
+          <a
+            href="mailto:muhammadbobbyoktaviano@gmail.com"
+            class="inline-block text-white bg-secondary-yellow hover:bg-amber-800 focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-5"
+            data-aos="zoom-in-up"
+            data-aos-delay="300"
+            >Say Hello</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <footer class="bg-primary" data-aos="fade-up" data-aos-duration="2500">
+      <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="flex items-center">
+              <img src="src/images/assets/logo/code-lab.png" class="h-8 me-3" alt="FlowBite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary-yellow">Code Lab Community</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Resources</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" rel="noopener" target="_blank" class="hover:underline">Flowbite</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://tailwindcss.com/" rel="noopener" target="_blank" class="hover:underline">Tailwind CSS</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fonts.google.com/" rel="noopener" target="_blank" class="hover:underline">Google Fonts</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://unsplash.com/" rel="noopener" target="_blank" class="hover:underline">Unsplash Images</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fontawesome.com/icons/" rel="noopener" target="_blank" class="hover:underline">Font Awesome Icons</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Follow us</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Instagram</a>
+                </li>
+                <li class="mb-4">
+                  <a href="" rel="noopener" target="_blank" class="hover:underline">Github</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Other</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://polmed.ac.id/" rel="noopener" target="_blank" class="hover:underline">Politeknik Negeri Medan</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-secondary-yellow sm:text-center">© 2024 <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Code Lab Indonesia</a>. All Rights Reserved. </span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- JS (Javascript) -->
+    <!-- flowbite -->
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- typeit js -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="src/js/typeit.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+
+    <!-- lightbox gallery -->
+    <script src="src/js/lightbox-plus-jquery.js"></script>
+
+    <!-- myJS -->
+    <script src="src/js/script.js"></script>
+    <script src="src/js/navbar.js"></script>
+  </body>
+</html>

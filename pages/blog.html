@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../src/images/assets/logo/favicon.png" />
+    <title>Blog News | Code Lab Community</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CSS -->
+    <link rel="stylesheet" href="../src/style/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+
+    <!-- myCss-->
+    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="stylesheet" href="../src/style/lightbox.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden font-poppins">
+    <!-- navbar -->
+    <div class="top-0 left-0 flex items-center w-full fixed z-[999] font-montserrat font-normal navbar-fixed" id="header" data-aos="fade-down" data-aos-delay="500">
+      <div class="container">
+        <div class="relative flex items-center justify-between mx-3 lg:mx-5">
+          <div class="px-5">
+            <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="block py-3 text-lg font-bold cursor-pointer text-sky-500 lg:text-xl">
+              <img src="../src/images/assets/logo/code-lab.png" alt="Code Lab" class="h-8 lg:w-20" />
+            </a>
+          </div>
+          <div class="flex items-center">
+            <a id="hamburger" name="hamburger" type="button" class="absolute block cursor-pointer right-4 lg:hidden">
+              <span class="w-[30px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out origin-top-left"></span>
+              <span class="w-[20px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out"></span>
+              <span class="w-[30px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out origin-bottom-left"></span>
+            </a>
+
+            <nav id="nav-menu" class="hidden absolute py-5 ps-5 bg-white shadow-lg rounded-md max-w-[200px] w-full right-5 top-10 lg:block lg:static lg:bg-transparent lg:rounded-none lg:max-w-full lg:shadow-none transition duration-300">
+              <ul id="nav" class="block lg:flex lg:justify-evenly">
+                <li class="group"><a href="#topnews" class="flex py-2 mx-8 text-base font-extrabold nav-item lg:underline lg:underline-offset-8 text-dark group-hover:text-secondary-yellow">Top News</a></li>
+                <li class="group"><a href="#recomendations" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Recomendations</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <a href="" class="inline-block">
+            <img src="../src/images/assets/github-dark.svg" alt="github-dark" class="hidden w-8 h-8 lg:block" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- jumbotron -->
+    <section class="relative flex flex-col items-center justify-center h-screen px-5 bg-primary">
+      <div class="text-center">
+        <h1 id="hero-blog" class="text-4xl font-bold text-white font-montserrat md:text-6xl lg:text-7xl">
+          <!-- typeit -->
+          <!-- Blog/<span class="text-secondary-yellow">News</span> -->
+        </h1>
+        <p class="max-w-screen-sm mx-auto mt-10 text-sm md:text-lg text-broke-white" data-aos="fade-up" data-aos-delay="900" data-aos-duration="2500">
+          Various information on the latest top news and personalized recommendations, so you stay updated with the latest developments and receive suggestions tailored to your interests. We have listed various latest news and interesting
+          recommendations here.
+        </p>
+      </div>
+
+      <!-- star -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute -top-10 right-[1%] scale-[0.3] animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-ballon.svg')] absolute -bottom-10 left-[1%] md:left-[5%] z-50 md:scale-110 animate-up-down"></div>
+      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute -top[50%] -left-[5%] md:scale-110 animate-pulse"></div>
+      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute -top[50%] -right-[5%] md:scale-110 animate-pulse"></div>
+
+      <!-- waves -->
+      <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -bottom-2 rotate-180">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- end jumbotron -->
+
+    <!-- top news -->
+    <section id="topnews" class="px-5 py-10 md:px-20 lg:px-28 md:py-16">
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold underline text-primary font-montserrat md:text-4xl lg:text-5xl">Top <span class="text-secondary-yellow">News</span></h1>
+      </div>
+      <!-- top news content -->
+      <div class="mt-10 md:mt-16 lg:flex lg:space-x-5">
+        <!-- top news 1 -->
+        <div class="flex flex-col p-3 my-3 transition-all rounded-md bg-broke-white lg:w-1/2 md:flex-col md:p-7 lg:p-6 lg:my-3 hover:bg-white hover:scale-105" data-aos="fade-up">
+          <a href="https://thenextweb.com/news/why-php-continues-to-be-a-popular-but-divisive-programming-language" rel="noopener" target="_blank">
+            <img src="../src/images/blog/blog-1.jpeg" alt="News Image" class="w-full h-auto mb-3 rounded-md md:w-full md:mb-2" />
+          </a>
+          <div class="md:w-full">
+            <p class="text-sm font-semibold text-secondary-yellow">Programming</p>
+            <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://thenextweb.com/news/why-php-continues-to-be-a-popular-but-divisive-programming-language" rel="noopener" target="_blank" class="hover:text-secondary-yellow"
+                >Why PHP continues to be a popular but divisive programming language</a
+              >
+            </h1>
+            <p class="mt-3 text-sm font-light md:mt-5 md:text-base">
+              One thing you can say for PHP is that it’s persistent. Like many long-standing programming languages, it’s often maligned by developers who would like to see a shift to newer candidates, yet it also maintains many supporters
+              and practitioners, serving as a reminder of C++ inventor Bjarne Stroustrup’s wise words: <br />
+
+              "There are only two kinds of languages: the ones people complain about and the ones nobody uses." <br />
+
+              First created in 1993 to enhance the webpage of programmer Rasmus Lerdorf, PHP didn’t originate as a new programming language and as such it developed organically.
+            </p>
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Published on: <span class="font-normal text-secondary-yellow">February 27, 2024</span></p>
+          </div>
+        </div>
+
+        <!-- top news 2 and 3 container -->
+        <div class="flex flex-col lg:w-1/2">
+          <!-- top news 2 -->
+          <div class="flex flex-col p-3 my-3 transition-all rounded-md bg-broke-white md:flex-col md:p-7 lg:p-6 md:my-3 hover:bg-white hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+            <a href="https://computradetech.com/id/blog-id/8-tren-internet-of-things-iot-di-2024-yang-wajib-dipantau/" rel="noopener" target="_blank">
+              <img src="../src/images/blog/blog-2.webp" alt="News Image" class="w-full h-auto mb-3 rounded-md md:mb-2 lg:h-48" />
+            </a>
+            <div class="md:w-full">
+              <p class="text-sm font-semibold text-secondary-yellow">Internet Of Things</p>
+              <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+                <a href="https://computradetech.com/id/blog-id/8-tren-internet-of-things-iot-di-2024-yang-wajib-dipantau/" rel="noopener" target="_blank" class="hover:text-secondary-yellow"
+                  >8 Internet of Things (IoT) Trends to Watch in 2024</a
+                >
+              </h1>
+              <p class="mt-3 text-sm font-light md:mt-5 md:text-base">
+                The Internet of Things (IoT) has become a hot topic, with growing implementation in business and non-business sectors, enabling devices to connect and "communicate" with each other.
+              </p>
+              <!-- info -->
+              <p class="mt-3 text-sm font-bold">Published on: <span class="font-normal text-secondary-yellow">May 6, 2024</span></p>
+            </div>
+          </div>
+
+          <!-- top news 3 -->
+          <div class="flex flex-col p-3 my-3 transition-all rounded-md bg-broke-white md:flex-col md:p-7 lg:flex-row lg:p-6 hover:bg-white hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://bageur.id/tren-desain-ui-ux-terbaru-di-tahun-2024/" rel="noopener" target="_blank" class="inline-block w-full h-full lg:me-5">
+              <img src="../src/images/blog/blog-3.png" alt="News Image" class="w-full mb-3 rounded-md md:h-96 md:mb-2 lg:h-full lg:mb-0 lg:mr-5" />
+            </a>
+            <div class="w-2/3">
+              <p class="text-sm font-semibold text-secondary-yellow">Others</p>
+              <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat lg:text-2xl">
+                <a href="https://bageur.id/tren-desain-ui-ux-terbaru-di-tahun-2024/" rel="noopener" target="_blank" class="hover:text-secondary-yellow">Latest UI/UX Design Trends in 2024</a>
+              </h1>
+              <p class="mt-3 text-sm font-light lg:text-base">In 2024, UI/UX design will evolve. Designers and developers must stay current with trends.</p>
+              <!-- info -->
+              <p class="mt-3 text-sm font-bold">Published on: <span class="font-normal text-secondary-yellow">June 20, 2024</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end top news -->
+
+    <!-- Recomendations -->
+    <section id="recomendations" class="relative px-5 py-10 pt-40 md:pt-56 md:px-20 lg:px-28 md:py-16 bg-primary">
+      <!-- waves -->
+      <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -top-2">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold text-white underline font-montserrat md:text-4xl lg:text-5xl">Recomendation For <span class="text-secondary-yellow">You</span></h1>
+      </div>
+
+      <!-- recomendations content -->
+      <div class="mt-10 md:mt-16">
+        <!-- recomendation 1 -->
+        <div class="flex flex-col p-3 my-3 transition-all rounded-md lg:w-full lg:flex-row lg:items-center lg:p-6 lg:my-3" data-aos="fade-right">
+          <a href="https://www.bbc.com/news/articles/c722j301pqwo" rel="noopener" target="_blank" class="w-full lg:w-1/2 lg:mr-6">
+            <img src="../src/images/blog/blog-4.jpg" alt="News Image" class="w-full h-auto mb-3 rounded-md lg:mb-0" />
+          </a>
+          <div class="w-full lg:w-1/2">
+            <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat lg:text-2xl">
+              <a href="https://www.bbc.com/news/articles/c722j301pqwo" rel="noopener" target="_blank" class="text-white hover:text-secondary-yellow hover:scale-110">Digital skills academy CodeClan to become college-based course</a>
+            </h1>
+            <p class="mt-3 text-sm font-light text-white lg:mt-5 lg:text-base">
+              Scotland's digital skills academy may be revived as a college-based course less than a year after its innovative predecessor went into liquidation. The CodeClan name and brand have been acquired by CodeBase, the Scottish
+              government's contractor for its £42m TechScaler programme to support start-up businesses and entrepreneurs. Teaching will be delivered by San Francisco-based online provider Owasar.
+            </p>
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold text-white">Published on: <span class="font-semibold text-secondary-yellow">june 14, 2024</span></p>
+          </div>
+        </div>
+
+        <!-- recomendation 2 -->
+        <div class="flex flex-col p-3 my-3 transition-all rounded-md lg:w-full lg:flex-row lg:items-center lg:p-6 lg:my-3" data-aos="fade-left">
+          <a href="https://bold.expert/can-ai-be-an-effective-personal-tutor/" rel="noopener" target="_blank" class="w-full lg:w-1/2 lg:mr-6">
+            <img src="../src/images/blog/blog-5.jpg" alt="News Image" class="w-full h-auto mb-3 rounded-md lg:mb-0" />
+          </a>
+          <div class="w-full lg:w-1/2">
+            <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat lg:text-2xl">
+              <a href="https://bold.expert/can-ai-be-an-effective-personal-tutor/" rel="noopener" target="_blank" class="text-white hover:text-secondary-yellow hover:scale-110">Can AI be an effective personal tutor?</a>
+            </h1>
+            <p class="mt-3 text-sm font-light text-white lg:mt-5 lg:text-base">
+              This season Libby Hills from the Jacobs Foundation and AI researcher Owen Henkel continue to speak with leading researchers, practitioners and educators on the Ed-Technical podcast series about the cutting edge of AI in
+              education. They will break down complex AI concepts into non-technical insights to better understand what the research says and help educators sift the useful insights from the AI hype.
+            </p>
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold text-white">Published on: <span class="font-semibold text-secondary-yellow">June 03, 2024</span></p>
+          </div>
+        </div>
+
+        <!-- recomendation 3 -->
+        <div class="flex flex-col p-3 my-3 transition-all rounded-md lg:w-full lg:flex-row lg:items-center lg:p-6 lg:my-3" data-aos="fade-right">
+          <a href="https://www.rri.co.id/iptek/680480/tren-teknologi-terbaru-2024-yang-akan-booming" rel="noopener" target="_blank" class="w-full lg:w-1/2 lg:mr-6">
+            <img src="../src/images/blog/blog-6.jpeg" alt="News Image" class="w-full h-auto mb-3 rounded-md lg:mb-0" />
+          </a>
+          <div class="w-full lg:w-1/2">
+            <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat lg:text-2xl">
+              <a href="https://www.rri.co.id/iptek/680480/tren-teknologi-terbaru-2024-yang-akan-booming" rel="noopener" target="_blank" class="text-white hover:text-secondary-yellow hover:scale-110"
+                >Latest Technology Trends of 2024 That Will Boom</a
+              >
+            </h1>
+            <p class="mt-3 text-sm font-light text-white lg:mt-5 lg:text-base">
+              From artificial intelligence to the Internet of Things (IoT), technology is shaping how we work, learn, and communicate. Leading companies are constantly competing to offer innovative solutions, while consumers are
+              increasingly accustomed to the convenience provided by the latest technological advancements.
+            </p>
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold text-white">Published on: <span class="font-semibold text-secondary-yellow">may 09, 2024</span></p>
+          </div>
+        </div>
+
+        <!-- recomendation 4 -->
+        <div class="flex flex-col p-3 my-3 transition-all rounded-md lg:w-full lg:flex-row lg:items-center lg:p-6 lg:my-3" data-aos="fade-left">
+          <a href="https://www.dicoding.com/blog/proyeksi-gaji-programmer-2024-masih-menjanjikan/" rel="noopener" target="_blank" class="w-full lg:w-1/2 lg:mr-6">
+            <img src="../src/images/blog/blog-7.jpg" alt="News Image" class="w-full h-auto mb-3 rounded-md lg:mb-0" />
+          </a>
+          <div class="w-full lg:w-1/2">
+            <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat lg:text-2xl">
+              <a href="https://www.dicoding.com/blog/proyeksi-gaji-programmer-2024-masih-menjanjikan/" rel="noopener" target="_blank" class="text-white hover:text-secondary-yellow hover:scale-110">
+                Programmer Salary Projections for 2024: Still Promising?</a
+              >
+            </h1>
+            <p class="mt-3 text-sm font-light text-white lg:mt-5 lg:text-base">
+              Information technology has been a hot topic in recent years. Many individuals are driving the advancements in technology today, including programmers. <br />
+
+              To keep up with the rapid progress in information technology, many companies are eager to adapt and stay ahead. Consequently, numerous companies are opening positions for programmers and developers to join their teams.
+            </p>
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold text-white">Published on: <span class="font-semibold text-secondary-yellow">January 29, 2024</span></p>
+          </div>
+        </div>
+
+        <!-- recomendation 5 -->
+        <div class="flex flex-col p-3 my-3 transition-all rounded-md lg:w-full lg:flex-row lg:items-center lg:p-6 lg:my-3" data-aos="fade-right">
+          <a href="https://sanantonioreport.org/darkhive-san-antonio-startup-week-defense-contracts/" rel="noopener" target="_blank" class="w-full lg:w-1/2 lg:mr-6">
+            <img src="../src/images/blog/blog-8.jpg" alt="News Image" class="w-full h-auto mb-3 rounded-md lg:mb-0" />
+          </a>
+          <div class="w-full lg:w-1/2">
+            <h1 class="mt-1 text-lg font-bold leading-5 text-primary font-montserrat lg:text-2xl">
+              <a href="https://sanantonioreport.org/darkhive-san-antonio-startup-week-defense-contracts/" rel="noopener" target="_blank" class="text-white hover:text-secondary-yellow hover:scale-110"
+                >After notching early success, Darkhive CEO shares lessons learned with San Antonio startups</a
+              >
+            </h1>
+            <p class="mt-3 text-sm font-light text-white lg:mt-5 lg:text-base">
+              Goodson is CEO and Turner is the chief technical officer of San Antonio-based Darkhive, which is developing a small, inexpensive autonomous drone for military and public safety use. The company also has expanded into related
+              software development.
+            </p>
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold text-white">Published on: <span class="font-semibold text-secondary-yellow">October 18, 2023</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- other -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-fishing.svg')] absolute right-0 md:right-[5%] scale-50 md:scale-100 -top-20 animate-up-down"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute left-0 scale-[0.3] md:scale-50 top-20 animate-pulse"></div>
+      <div class="hidden md:block h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-star.svg')] absolute right-[5%] -bottom-20 scale-125 animate-rotate-spin"></div>
+    </section>
+    <!-- end recomendations -->
+
+    <!-- footer -->
+    <footer class="pt-10 bg-primary md:pt-20">
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="flex items-center">
+              <img src="../src/images/assets/logo/code-lab.png" class="h-8 me-3" alt="FlowBite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary-yellow">Code Lab Community</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Resources</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" rel="noopener" target="_blank" class="hover:underline">Flowbite</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://tailwindcss.com/" rel="noopener" target="_blank" class="hover:underline">Tailwind CSS</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fonts.google.com/" rel="noopener" target="_blank" class="hover:underline">Google Fonts</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://unsplash.com/" rel="noopener" target="_blank" class="hover:underline">Unsplash Images</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fontawesome.com/icons/" rel="noopener" target="_blank" class="hover:underline">Font Awesome Icons</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Follow us</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Instagram</a>
+                </li>
+                <li class="mb-4">
+                  <a href="" rel="noopener" target="_blank" class="hover:underline">Github</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Other</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://polmed.ac.id/" rel="noopener" target="_blank" class="hover:underline">Politeknik Negeri Medan</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-secondary-yellow sm:text-center">© 2024 <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Code Lab Indonesia</a>. All Rights Reserved. </span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back -->
+    <a href="../index.html#other" class="fixed bottom-0 block right-10 z-[999] hover:animate-pulse" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500">
+      <img src="../src/images/assets/back-button.svg" alt="back" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
+    </a>
+
+    <!-- JS (Javascript) -->
+    <!-- flowbite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+
+    <!-- typeit js -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="../src/js/typeit-blog.js"></script>
+
+    <!-- myJS -->
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/navbar.js"></script>
+  </body>
+</html>

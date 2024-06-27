@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../src/images/assets/logo/favicon.png" />
+    <title>Event Meet-Up | Code Lab Community</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CSS -->
+    <link rel="stylesheet" href="../src/style/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+
+    <!-- myCss-->
+    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="stylesheet" href="../src/style/lightbox.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden font-poppins">
+    <!-- navbar -->
+    <div class="top-0 left-0 flex items-center w-full fixed z-[999] font-montserrat font-normal navbar-fixed" id="header" data-aos="fade-down" data-aos-delay="500">
+      <div class="container">
+        <div class="relative flex items-center justify-between mx-3 lg:mx-5">
+          <div class="px-5">
+            <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="block py-3 text-lg font-bold cursor-pointer text-sky-500 lg:text-xl">
+              <img src="../src/images/assets/logo/code-lab.png" alt="Code Lab" class="h-8 lg:w-20" />
+            </a>
+          </div>
+          <div class="flex items-center">
+            <a id="hamburger" name="hamburger" type="button" class="absolute block cursor-pointer right-4 lg:hidden">
+              <span class="w-[30px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out origin-top-left"></span>
+              <span class="w-[20px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out"></span>
+              <span class="w-[30px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out origin-bottom-left"></span>
+            </a>
+
+            <nav id="nav-menu" class="hidden absolute py-5 ps-5 bg-white shadow-lg rounded-md max-w-[200px] w-full right-5 top-10 lg:block lg:static lg:bg-transparent lg:rounded-none lg:max-w-full lg:shadow-none transition duration-300">
+              <ul id="nav" class="block lg:flex lg:justify-evenly">
+                <li class="group"><a href="#meetup" class="flex py-2 mx-8 text-base font-extrabold nav-item lg:underline lg:underline-offset-8 text-dark group-hover:text-secondary-yellow">Meet-Up</a></li>
+                <li class="group"><a href="#hackathon" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Hackathon</a></li>
+                <li class="group"><a href="#webinar" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Webinar</a></li>
+                <li class="group"><a href="#workshop" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Workshop</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <a href="" class="inline-block">
+            <img src="../src/images/assets/github-dark.svg" alt="github-dark" class="hidden w-8 h-8 lg:block" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- jumbotron -->
+    <section class="relative flex flex-col items-center justify-center h-screen px-5 bg-primary">
+      <div class="text-center">
+        <h1 id="hero-event" class="text-4xl font-bold text-white font-montserrat md:text-6xl lg:text-7xl">
+          <!-- typeit -->
+          <!-- Event <span class="text-secondary-yellow">Meet-Up</span> -->
+        </h1>
+        <p class="max-w-screen-sm mx-auto mt-10 text-sm md:text-lg text-broke-white" data-aos="fade-up" data-aos-delay="900" data-aos-duration="2500">
+          Various information about upcoming meet-ups, hackathons, webinars and workshops so you can meet, compete healthily and innovate. We have listed various latest and interesting events here.
+        </p>
+      </div>
+
+      <!-- star -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute -top-10 right-[1%] scale-[0.3] animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-ballon.svg')] absolute -bottom-10 left-[1%] md:left-[5%] z-50 md:scale-110 animate-up-down"></div>
+      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute -top[50%] -left-[5%] md:scale-110 animate-pulse"></div>
+      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute -top[50%] -right-[5%] md:scale-110 animate-pulse"></div>
+
+      <!-- waves -->
+      <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -bottom-2 rotate-180">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- end jumbotron -->
+
+    <!-- meet up -->
+    <section id="meetup" class="px-5 py-10 md:px-20 lg:px-28 md:py-16">
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold underline text-primary font-montserrat md:text-4xl lg:text-5xl">Meet-<span class="text-secondary-yellow">Up</span></h1>
+      </div>
+      <!-- meet up content -->
+      <div class="mt-10 md:mt-16">
+        <!-- meet up 1 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-right">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://forms.gle/g4VjjfTw1n4Yki3s6" rel="noopener" target="_blank" class="hover:text-secondary-yellow">PyMeetUp Jakarta 2024 x BPT DigitalOcean</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">31 Mei 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              Theme : PYTHON ON DIGITALOCEAN: A HANDS-ON GUIDE TO CLOUD-BASED DEVELOPMENT ☁. Join Blue Power Technology together with DigitalOcean to dive into the world of cloud-based Python development with practical exercises.
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">Blue Power Technology Office - Kappa & Lambda Room Centennial Tower 12th Floor, Jl. Jend. Gatot Subroto Kav. 24-25, Jakarta.</span></p>
+            <p class="text-sm font-bold">
+              Other Information : <a href="https://forms.gle/g4VjjfTw1n4Yki3s6" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">https://forms.gle/g4VjjfTw1n4Yki3s6</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">31 Mei 2024</p>
+          </div>
+        </div>
+
+        <!-- meet up 2 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-left">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="http://intip.in/SubmitTalks" rel="noopener" target="_blank" class="hover:text-secondary-yellow">Meet-Up with Lightning Talks Style with 3 Topics: Web, Data, and IOT (Internet of Things)</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">25 Mei 2019</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              @surabayadotpy will hold a meet-up in Lightning Talks style. There will be many speakers who will share ideas, experiences, program demos or their daily lives using Python within 5 minutes each. You guys can choose one or more
+              of the following topics: - Web 🖥 - Data 💾 - Internet Of Things 📡
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">Surabaya, Indonesia.</span></p>
+            <p class="text-sm font-bold">Other Information : <a href="http://intip.in/SubmitTalks" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">http://intip.in/SubmitTalks</a></p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">25 Mei 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end meet up -->
+
+    <!-- Hackaton -->
+    <section id="hackathon" class="px-5 py-10 md:px-20 lg:px-28 md:py-16">
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold underline text-primary font-montserrat md:text-4xl lg:text-5xl">Hacka<span class="text-secondary-yellow">thon</span></h1>
+      </div>
+      <!-- Hackaton content -->
+      <div class="mt-10 md:mt-16">
+        <!-- Hackaton 1 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-right">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://www.instagram.com/p/C8YfurzhknR/?igsh=MWpvdm1hMm5nZDFsdA==" rel="noopener" target="_blank" class="hover:text-secondary-yellow">Hackaton Lab 2024</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">Akhir Tahun 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              This year is here to introduce the 2024 Hackathon program! We invite students of all majors to join in to get complete information about how you can participate in this year's innovation competition.
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-green-500">Akan datang</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">-</span></p>
+            <p class="text-sm font-bold">
+              Other Information :
+              <a href="https://www.instagram.com/p/C8YfurzhknR/?igsh=MWpvdm1hMm5nZDFsdA==" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">Instagram : @Wikan_Sakarinto</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">Akhir Tahun 2024</p>
+          </div>
+        </div>
+
+        <!-- Hackaton 2 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-left">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://www.instagram.com/p/C8VwmZlyETY/?igsh=dGJueTNqenpvZjUw" rel="noopener" class="hover:text-secondary-yellow">Garuda Hacks 5.0 - Hackathon</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">11-13 Juli 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              With our theme this time: "Sigma: Kindness for a Better Tomorrow," there is a total prize worth IDR 100 Million that you can win! 🎉This event is open to all ages and does not require coding experience. You can take part in
+              cool workshops and get certificates too , you know!
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-green-500">Akan datang</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">Universitas Multimedia Nusantara, Tangerang, Indonesia.</span></p>
+            <p class="text-sm font-bold">
+              Other Information : <a href="https://www.instagram.com/p/C8VwmZlyETY/?igsh=dGJueTNqenpvZjUw" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">Instagram : @infolomba_gratis</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">11-13 Juli 2024</p>
+          </div>
+        </div>
+
+        <!-- Hackaton 3 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-right">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://hackathon.fekdi.co.id" rel="noopener" target="_blank" class="hover:text-secondary-yellow">📢 HACKATHON BANK INDONESIA 2024! 🎉</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">29 April 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              The 2024 Bank Indonesia Hackathon is an innovation competition to solve various problems through technology-based solutions, especially using Artificial Intelligence and Machine Learning. cool workshops and get certificates
+              too , you know!
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">Zoom Meeting: ID: 946 9751 8651 | Pass: Hackathon.</span></p>
+            <p class="text-sm font-bold">Other Information : <a href="https://hackathon.fekdi.co.id" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">https://hackathon.fekdi.co.id</a></p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">29 April 2024</p>
+          </div>
+        </div>
+
+        <!-- Hackaton 4 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-left">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://www.instagram.com/p/C8Y3fKWhbup/?igsh=ZDZxaWowbmE4eGY5" rel="noopener" target="_blank" class="hover:text-secondary-yellow">Hackathon : Tech For Good </a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">22-23 Juni 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">Hello everyone!!! Hackathon registration has been opened for all students throughout West Sumatra with the theme "Tech For Good: Empowering Social Impact"</p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">-</span></p>
+            <p class="text-sm font-bold">
+              Other Information :
+              <a href="https://www.instagram.com/p/C8Y3fKWhbup/?igsh=ZDZxaWowbmE4eGY5" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">Instagram : @csrelatedcompetitions</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">22-23 Juni 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Hackaton -->
+
+    <!-- webinar -->
+    <section id="webinar" class="relative px-5 py-10 pt-40 md:pt-56 md:px-20 lg:px-28 md:py-16 bg-primary">
+      <!-- waves -->
+      <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -top-2">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold text-white underline font-montserrat md:text-4xl lg:text-5xl">Webi<span class="text-secondary-yellow">nar</span></h1>
+      </div>
+      <!-- webinar content -->
+      <div class="mt-10 md:mt-16">
+        <!-- webinar 1 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-right">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://www.instagram.com/p/C8XF-2ko6MZ/?igsh=MXVwbHhqaGJwZXNjNw%3D%3D" rel="noopener" target="_blank" class="hover:text-secondary-yellow">How to Use AI to Simplify Inbound Lead Management</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">10 Juli 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              Discover the power of AI in your marketing strategy for lead management 👥 Take part in our exclusive webinar and learn from real use cases how you can optimize your lead intake, analysis, and allocation processes through
+              automation.
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-green-500">Akan datang</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">-</span></p>
+            <p class="text-sm font-bold">
+              Other Information :
+              <a href="https://www.instagram.com/p/C8XF-2ko6MZ/?igsh=MXVwbHhqaGJwZXNjNw%3D%3D" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">Instagram : @itsmakehq</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">10 Juli 2024</p>
+          </div>
+        </div>
+
+        <!-- webinar 2 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-left">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://www.dicoding.com/events/8772" rel="noopener" target="_blank" class="hover:text-secondary-yellow">DevCoach 157 : Back-End | Mendesain Aplikasi dengan Clean Architecture</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">28 Juni 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              Dicoding Developer Coaching this time will discuss material and questions about Back-End Developers with the theme "Designing Applications with Clean Architecture". So you will learn how to build Back-End projects with a
+              software architecture design that is flexible and easy to adapt when technology changes, and of course using clean architecture principles!
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">LIVE at YouTube Dicoding Indonesia</span></p>
+            <p class="text-sm font-bold">
+              Other Information : <a href="https://www.dicoding.com/events/8772" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">https://www.dicoding.com/events/8772</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">28 Juni 2024</p>
+          </div>
+        </div>
+
+        <!-- webinar 3 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-right">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://www.dicoding.com/events/8752" rel="noopener" target="_blank" class="hover:text-secondary-yellow">DevCoach 156 : ML Android | Menyala Firebase! Update On The Air Model On-Device dengan Firebase ML</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">21 Juni 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              Dicoding Developer Coaching this time will discuss material and questions about Machine Learning on Android with the theme "Firebase on! Update On the Air Model On-Device with Firebase ML". The application of On-Device Machine
+              Learning on Android is increasingly massive. With the model on the user's device, applications can run more quickly and safely. However, have you ever thought about it, what if we want to update the model? Does the application
+              need to be reinstalled? Of course not, with Firebase ML!
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">LIVE at YouTube Dicoding Indonesia</span></p>
+            <p class="text-sm font-bold">
+              Other Information : <a href="https://www.dicoding.com/events/8752" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">https://www.dicoding.com/events/8752</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">21 Juni 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- other -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-fishing.svg')] absolute right-0 md:right-[5%] scale-50 md:scale-100 -top-20 animate-up-down"></div>
+    </section>
+    <!-- end webinar -->
+
+    <!-- workshop -->
+    <section id="workshop" class="relative px-5 py-10 md:px-20 lg:px-28 md:py-16 bg-primary">
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold text-white underline font-montserrat md:text-4xl lg:text-5xl">Work<span class="text-secondary-yellow">shop</span></h1>
+      </div>
+      <!-- workshop content -->
+      <div class="mt-10 md:mt-16">
+        <!-- workshop 1 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-right">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://www.instagram.com/p/C7TN64DyswR/?igsh=OHFiNnR1ZDZwc2Uz" rel="noopener" target="_blank" class="hover:text-secondary-yellow">Workshop IT 2024 - Himabio Unnes</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">8 Juni 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              This year Himabio Unnes is proud to hold the 2024 IT Workshop which is open to all Himabio Functionaries, Underbow Functionaries and the General Public with the theme "Build Creativity by Improving Editing Skills for Learning
+              in the Digitalization Era"
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">Unnes, Indonesia.</span></p>
+            <p class="text-sm font-bold">
+              Other Information : <a href="https://www.instagram.com/p/C7TN64DyswR/?igsh=OHFiNnR1ZDZwc2Uz" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">Instagram : @eventnetwork.id</a>
+            </p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">8 Juni 2024</p>
+          </div>
+        </div>
+
+        <!-- workshop 2 -->
+        <div class="flex justify-between p-3 my-3 transition-all rounded-md bg-broke-white md:p-7 lg:p-10 md:my-7 hover:bg-white hover:scale-110" data-aos="fade-left">
+          <div class="md:w-2/3">
+            <h1 class="text-lg font-bold leading-5 text-primary font-montserrat md:text-xl lg:text-2xl">
+              <a href="https://codingstudio.id/event/" rel="noopener" target="_blank" class="hover:text-secondary-yellow">All Workshop by codingstudio.id</a>
+            </h1>
+            <p class="my-3 text-sm font-light text-secondary-yellow md:hidden">24-26 Mei 2024</p>
+            <p class="text-sm font-light md:mt-5 md:text-base">
+              Join the offline workshop and learn how data phishing works in the world of Cyber ​​Security, data analysis using AI (Artificial Intelligence), and creating a Financial Dashboard using Excel!
+            </p>
+
+            <!-- info -->
+            <p class="mt-3 text-sm font-bold">Status : <span class="font-normal text-red-500">Selesai</span></p>
+            <p class="mt-3 text-sm font-bold">Locate : <span class="font-normal">Grand Galaxy Park, Bekasi, Indonesia.</span></p>
+            <p class="text-sm font-bold">Other Information : <a href="https://codingstudio.id/event/" rel="noopener" target="_blank" class="font-normal text-secondary-yellow hover:text-secondary-blue">https://codingstudio.id/event/</a></p>
+          </div>
+
+          <div class="hidden md:block md:w-1/4">
+            <p class="my-3 font-semibold text-right text-secondary-yellow">24-26 Mei 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- other -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute left-0 scale-[0.3] md:scale-50 -top-20 animate-pulse"></div>
+      <div class="hidden md:block h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-star.svg')] absolute right-[5%] -bottom-20 scale-125 animate-rotate-spin"></div>
+    </section>
+    <!-- end workshop -->
+
+    <!-- footer -->
+    <footer class="pt-10 bg-primary md:pt-20">
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="flex items-center">
+              <img src="../src/images/assets/logo/code-lab.png" class="h-8 me-3" alt="FlowBite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary-yellow">Code Lab Community</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Resources</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" rel="noopener" target="_blank" class="hover:underline">Flowbite</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://tailwindcss.com/" rel="noopener" target="_blank" class="hover:underline">Tailwind CSS</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fonts.google.com/" rel="noopener" target="_blank" class="hover:underline">Google Fonts</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://unsplash.com/" rel="noopener" target="_blank" class="hover:underline">Unsplash Images</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fontawesome.com/icons/" rel="noopener" target="_blank" class="hover:underline">Font Awesome Icons</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Follow us</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Instagram</a>
+                </li>
+                <li class="mb-4">
+                  <a href="" rel="noopener" target="_blank" class="hover:underline">Github</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Other</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://polmed.ac.id/" rel="noopener" target="_blank" class="hover:underline">Politeknik Negeri Medan</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-secondary-yellow sm:text-center">© 2024 <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Code Lab Indonesia</a>. All Rights Reserved. </span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back -->
+    <a href="../index.html#other" class="fixed bottom-0 block right-10 z-[999] hover:animate-pulse" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500">
+      <img src="../src/images/assets/back-button.svg" alt="back" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
+    </a>
+
+    <!-- JS (Javascript) -->
+    <!-- flowbite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+
+    <!-- typeit js -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="../src/js/typeit-event.js"></script>
+
+    <!-- myJS -->
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/navbar.js"></script>
+  </body>
+</html>

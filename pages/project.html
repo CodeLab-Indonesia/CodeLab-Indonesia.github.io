@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../src/images/assets/logo/favicon.png" />
+    <title>Project Gallery | Code Lab Community</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CSS -->
+    <link rel="stylesheet" href="../src/style/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+
+    <!-- myCss-->
+    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="stylesheet" href="../src/style/lightbox.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden font-poppins">
+    <!-- header -->
+    <header id="custom-controls-gallery" class="relative w-full" data-carousel="slide" data-aos="fade-down">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden shadow-xl md:h-[30rem]">
+        <!-- Item 1 -->
+        <a href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/" rel="noopener" target="_blank" class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="../src/images/project/Centering-Element-With-CSS.jpg" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+
+          <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
+            <div class="text-center">
+              <h3 class="text-base font-bold font-montserrat md:text-2xl lg:text-3xl lg:font-extrabold">Centering Element with <span class="text-secondary-yellow">CSS</span></h3>
+              <p class="max-w-screen-sm text-xs font-extralight md:mt-3 md:text-lg lg:text-xl">In this tutorial, we'll go over how to center different elements horizontally, vertically, and both vertically and horizontally...</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Item 2 -->
+        <a href="https://medium.com/@nweligalla/another-5-next-level-css-tricks-to-enhance-your-web-design-a5d256eee99f" rel="noopener" target="_blank" class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../src/images/project/5-Next-Level-CSS-Tricks.webp" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 lg:h-auto top-1/2 left-1/2 brightness-75" alt="" />
+
+          <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
+            <div class="text-center">
+              <h3 class="text-base font-bold font-montserrat md:text-2xl lg:text-3xl lg:font-extrabold">5 Next-Level CSS <span class="text-secondary-yellow">Tricks</span></h3>
+              <p class="max-w-screen-sm text-xs font-extralight md:mt-3 md:text-lg lg:text-xl">In this tutorial, we'll go over how to center different elements horizontally, vertically, and both vertically and horizontally...</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Item 3 -->
+        <a href="https://www.create-learn.us/blog/how-to-make-ai-in-python-tutorial/" rel="noopener" target="_blank" class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="../src/images/project/How-to-Make-AI-in-Python-Tutorial.png" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+
+          <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
+            <div class="text-center">
+              <h3 class="text-base font-bold font-montserrat md:text-2xl lg:text-3xl lg:font-extrabold">How to Make AI in <span class="text-secondary-yellow">Python Tutorial</span></h3>
+              <p class="max-w-screen-sm text-xs font-extralight md:mt-3 md:text-lg lg:text-xl">
+                Python is commonly used to develop AI applications. One way that Python is used for human to computer interactions is through chatbots. Chatbots use artificial intelligence and...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- navigation-->
+    <div id="nav" class="sticky top-0 flex flex-wrap items-center justify-start gap-3 p-3 my-5 md:gap-5 md:p-5 bg-broke-white bg-opacity-30 backdrop-blur-md z-[100]" data-aos="fade-down" data-aos-delay="200">
+      <a
+        href="#trending"
+        class="inline-block text-sm font-extrabold lg:underline lg:underline-offset-8 nav-item font-montserrat text-primary hover:text-secondary-yellow md:text-md md:tracking-wider"
+        data-aos="fade-right"
+        data-aos-delay="200"
+        >Trending</a
+      >
+      <a href="#programming" class="inline-block text-sm nav-item font-montserrat text-primary hover:text-secondary-yellow md:text-md md:tracking-wider" data-aos="fade-right" data-aos-delay="300">Programming</a>
+      <a href="#iot" class="inline-block text-sm nav-item font-montserrat text-primary hover:text-secondary-yellow md:text-md md:tracking-wider" data-aos="fade-right" data-aos-delay="400">IOT</a>
+      <a href="#other" class="inline-block text-sm nav-item font-montserrat text-primary hover:text-secondary-yellow md:text-md md:tracking-wider" data-aos="fade-right" data-aos-delay="500">Other</a>
+    </div>
+    <!-- end navigation -->
+
+    <!-- trending -->
+    <section id="trending" class="px-10 py-10 md:px-20 lg:px-28 md:py-16">
+      <!-- head -->
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold underline text-primary font-montserrat md:text-4xl lg:text-5xl">Trend<span class="text-secondary-yellow">ing</span></h1>
+      </div>
+
+      <!-- content-->
+      <div class="flex flex-wrap justify-between gap-5 mt-10 items-star">
+        <!-- trending 1 -->
+        <a
+          href="https://blog.bitsrc.io/mini-game-using-only-html-css-and-javascript-b1707ef59475"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Mini-Game-Using-Only-HTML-CSS-and-JavaScript.webp" alt="mini-game-using-only-html-css-and-javascript" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Mini-Game Using Only HTML, CSS and JavaScript</h5>
+            <p class="mb-3 font-normal text-gray-700">1st step, Start by creating an HTML file and open it in a text editor....</p>
+          </div>
+        </a>
+
+        <!-- trending 2 -->
+        <a
+          href="https://medium.com/@studentofbharat/automate-whatsapp-message-using-python-1ed97488ee60"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Automate-WhatsApp-Message-using-Python.webp" alt="automate-whatsapp-message-using-python-1ed97488ee60" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Automate WhatsApp Message using Python</h5>
+            <p class="mb-3 font-normal text-gray-700">Hey there, tech enthusiasts! Today, I’m thrilled to introduce you to an incredibly handy Python library that will make your messaging life a breeze — PyWhatKit...</p>
+          </div>
+        </a>
+
+        <!-- trending 3 -->
+        <a
+          href="https://www.malasngoding.com/membuat-pemutar-video-dengan-html/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/membuat-pemutar-video-pada-html5.png" alt="membuat-pemutar-video-dengan-html" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Creating a Video Player With HTML5</h5>
+            <p class="mb-3 font-normal text-gray-700">Are you looking for a tutorial on how to make an online video player using only HTML? yep. Friend...</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- end trending -->
+
+    <!-- programing -->
+    <section id="programming" class="relative px-5 py-10 pt-40 md:pt-56 md:px-20 lg:px-28 md:py-16 bg-primary">
+      <!-- waves -->
+      <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -top-2">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <!-- head -->
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold text-white underline font-montserrat md:text-4xl lg:text-5xl">Programm<span class="text-secondary-yellow">ing</span></h1>
+      </div>
+
+      <!-- content-->
+      <div class="flex flex-wrap justify-between gap-5 mt-10 items-star">
+        <!-- programming 1 -->
+        <a
+          href="https://www.hostinger.co.id/tutorial/cara-upload-website?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=9123501&gad_source=1&gclid=CjwKCAjw7NmzBhBLEiwAxrHQ-SwmF7IalC1MPeUiQGbGGTUADWaUjrGHQucO9ZWWqG5yNibcEI3BgRoClkYQAvD_BwE"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/how-to-upload-your-website.png" alt="how-to-upload-your-website" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">How to Upload a Website to Hosting, Just 6 Easy Steps!</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              To get your site online, you need to do several ways to host your website so that visitors can access it on the internet. We will explain how to upload a website using several tools which are certainly quite familiar. The
+              steps...
+            </p>
+          </div>
+        </a>
+
+        <!-- programming 2 -->
+        <a
+          href="https://www.codepolitan.com/blog/mengenal-api-dan-tutorial-penerapannya/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/pengenalan-dan-tutorial-api.png" alt="pengenalan-dan-tutorial-api" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Get to Know the API and its Implementation Tutorial</h5>
+            <p class="mb-3 font-normal text-gray-700">Hi coders, this time we will discuss APIs that you may have often heard of but haven't or are still confused about their definition and use. So, the API is...</p>
+          </div>
+        </a>
+
+        <!-- programming 3 -->
+        <a
+          href="https://codingstudio.id/blog/cara-merancang-database/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/merancang-database.webp" alt="merancang-database" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">How to Design a Database: Follow These 7 Steps!</h5>
+            <p class="mb-3 font-normal text-gray-700">A database is a collection of information that will be stored in a computer systematically so that the data can be checked using a computer program...</p>
+          </div>
+        </a>
+
+        <!-- programming 4 -->
+        <a
+          href="https://www.petanikode.com/tailwind-dasar/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/tutorial-tailwind.png" alt="tutorial-tailwind" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Tailwind Tutorial #1: Basic Tailwind CSS for Beginners</h5>
+            <p class="mb-3 font-normal text-gray-700">Tailwind CSS is a utility-based CSS framework for creating UI or the appearance of web applications. Utility based means...</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- other -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-ballon.svg')] absolute -top-10 right-[1%] md:right-[10%] z-50 scale-90 md:scale-110 animate-up-down" data-aos="fade-down"></div>
+    </section>
+    <!-- end programming -->
+
+    <!-- iot -->
+    <section id="iot" class="relative px-5 py-10 pb-40 md:pb-56 md:px-20 lg:px-28 md:py-16 bg-primary">
+      <!-- head -->
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold text-white underline font-montserrat md:text-4xl lg:text-5xl">Internet of <span class="text-secondary-yellow">Things</span></h1>
+      </div>
+
+      <!-- content-->
+      <div class="flex flex-wrap justify-between gap-5 mt-10 items-star">
+        <!-- iot 1 -->
+        <a
+          href="https://www.warriornux.com/esp8266-iot-telegrambot-kontrol-relay-lampu-via-internet/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Kontrol-Relay-via-Telegram.webp" alt="Kontrol-Relay-via-Telegram" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">ESP8266 IoT TelegramBot – Light Relay Control via Internet</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              In this tutorial we will discuss how to control a house light relay via the internet using esp8266 and the Telegram application. This Telegram application has a BOT feature. Bot itself is another word for robot...
+            </p>
+          </div>
+        </a>
+
+        <!-- iot 2 -->
+        <a
+          href="https://www.kevintekno.com/2023/07/nodemcu-pemula-program-led.html"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/node-mcu-program-led.webp" alt="node-mcu-program-led" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">IoT Tutorial: Creating the First Program on NodeMCU ESP8266</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              Before we start, let's first discuss what NodeMCU is. NodeMCU is a development platform based on the ESP8266 microcontroller. This platform has Wi-Fi capabilities that allow your devices to connect...
+            </p>
+          </div>
+        </a>
+
+        <!-- iot 3 -->
+        <a
+          href="https://www.anakkendali.com/2021/02/22/tutorial-lengkap-membuat-smart-home-dengan-arduino/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Membuat-Smart-Home-Berbasis-IoT.jpg" alt="Membuat-Smart-Home-Berbasis-IoT" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Complete tutorial for making a smart home with Arduino</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              Smart home itself, if interpreted in Indonesian, is a smart house or intelligent house, meaning that a smart home is a house building that is designed so that its electronic systems run automatically or can be controlled
+              remotely....
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- waves -->
+      <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -bottom-2 rotate-180">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <!-- other -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute -top-20 left-[1%] md:left-[10%] z-50 scale-50 animate-pulse"></div>
+      <div
+        class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-rocket.svg')] absolute -bottom-10 left-[1%] md:left-[10%] z-50 hidden md:block scale-110 animate-up-down-left"
+        data-aos="fade-up-left"
+        data-aos-delay="100"
+        data-aos-duration="2500"
+      ></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute bottom-10 right-[1%] md:right-[10%] z-50 scale-50 animate-pulse"></div>
+    </section>
+    <!-- end iot -->
+
+    <!-- other -->
+    <section id="other" class="relative px-10 py-10 pb-40 md:pb-56 md:px-20 lg:px-28 md:py-16">
+      <!-- head -->
+      <div class="text-center" data-aos="fade-down">
+        <h1 class="text-2xl font-bold underline text-primary font-montserrat md:text-4xl lg:text-5xl">Other</h1>
+      </div>
+
+      <!-- content-->
+      <div class="flex flex-wrap justify-between gap-5 mt-10 items-star">
+        <!-- other 1 -->
+        <a
+          href="https://www.dicoding.com/blog/7-langkah-menjadi-ui-ux-designer/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/7-Langkah-Menjadi-UI-UX-Designer.png" alt="7-Langkah-Menjadi-UI-UX-Designer" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">7 Steps to Becoming a UI UX Designer</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              You will often hear the words UI UX, especially when you open a job vacancy portal. The increasing demand for trending professions in the UI UX field makes you motivated to learn how to become a UI UX Designer...
+            </p>
+          </div>
+        </a>
+
+        <!-- other 2 -->
+        <a
+          href="https://www.dicoding.com/blog/5-langkah-awal-menjadi-seorang-programmer/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/5-Langkah-Awal-menjadi-Seorang-Programmer.png" alt="5-Langkah-Awal-menjadi-Seorang-Programmer" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">5 First Steps to Becoming a Programmer</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              As a newbie, you must know the initial stages of becoming a programmer so that you don't make the wrong start. Here are 5 initial steps to becoming a programmer that you can follow...
+            </p>
+          </div>
+        </a>
+
+        <!-- other 3 -->
+        <a
+          href="https://www.coursera.org/articles/how-to-get-a-job-in-it"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/get-job-it.png" alt="get-job-it" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">How to Get a Job in IT: 7 Steps</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              A job in information technology (IT) can allow you to help people, solve problems, and constantly learn new things. It’s a diverse field that can reward both the generalist and the specialist. Plus, it’s a growing field that
+              offers solid entry-level salaries...
+            </p>
+          </div>
+        </a>
+
+        <!-- other 4 -->
+        <a
+          href="https://www.turing.com/blog/step-by-step-guide-how-to-integrate-ai-into-your-projects/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/integrasi-ai-dalam-project.webp" alt="integrasi-ai-dalam-project" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Step by Step Guide: How to Integrate AI into Your Projects</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              AI is one of the most powerful and advanced tools we have today in the world of technology. Integrating them into your projects can be very useful but can also be a challenging task...
+            </p>
+          </div>
+        </a>
+
+        <!-- other 5 -->
+        <a
+          href="https://qontak.com/blog/integrasi-chatgpt-dengan-whatsapp/"
+          rel="noopener"
+          target="_blank"
+          class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/integrasi-wa-chatgpt.webp" alt="integrasi-wa-chatgpt" />
+          <div class="flex flex-col justify-between leading-normal md:ms-3">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Here's an Easy Way to Use ChatGPT on WhatsApp</h5>
+            <p class="mb-3 font-normal text-gray-700">
+              In recent times, chatGPT has become a hot topic that has been widely discussed. As a result, many have begun to adopt this technology. One of them is that WhatsApp can be integrated with chatGPT...
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- other -->
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/moon.svg')] absolute -bottom-80 left-[1%] md:left-[10%] z-40 hidden md:block md:scale-110"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-star.svg')] absolute -bottom-24 md:-bottom-48 left-[1%] md:left-[10%] z-50 md:scale-150 animate-rotate-spin" data-aos="fade-up"></div>
+    </section>
+    <!-- end other -->
+
+    <!-- waves -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#14213D" fill-opacity="1" d="M0,64L1440,256L1440,320L0,320Z"></path></svg>
+    <!-- footer -->
+    <footer class="pt-10 -mt-2 bg-primary md:pt-20">
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+      <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="flex items-center">
+              <img src="../src/images/assets/logo/code-lab.png" class="h-8 me-3" alt="FlowBite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary-yellow">Code Lab Community</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Resources</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" rel="noopener" target="_blank" class="hover:underline">Flowbite</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://tailwindcss.com/" rel="noopener" target="_blank" class="hover:underline">Tailwind CSS</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fonts.google.com/" rel="noopener" target="_blank" class="hover:underline">Google Fonts</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://unsplash.com/" rel="noopener" target="_blank" class="hover:underline">Unsplash Images</a>
+                </li>
+                <li class="mb-4">
+                  <a href="https://fontawesome.com/icons/" rel="noopener" target="_blank" class="hover:underline">Font Awesome Icons</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Follow us</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Instagram</a>
+                </li>
+                <li class="mb-4">
+                  <a href="" rel="noopener" target="_blank" class="hover:underline">Github</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-secondary-yellow">Other</h2>
+              <ul class="font-medium text-broke-white">
+                <li class="mb-4">
+                  <a href="https://polmed.ac.id/" rel="noopener" target="_blank" class="hover:underline">Politeknik Negeri Medan</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-secondary-yellow sm:text-center">© 2024 <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="hover:underline">Code Lab Indonesia</a>. All Rights Reserved. </span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back -->
+    <a href="../index.html#diy" class="fixed bottom-0 block right-10 z-[999] hover:animate-pulse" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500">
+      <img src="../src/images/assets/back-button.svg" alt="back" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
+    </a>
+
+    <!-- JS (Javascript) -->
+    <!-- flowbite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+
+    <!-- myJS -->
+    <script src="../src/js/navbar.js"></script>
+  </body>
+</html>

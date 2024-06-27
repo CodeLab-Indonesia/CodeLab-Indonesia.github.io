@@ -1,6 +1,6 @@
 # Code Lab Community | `Landing Page`
 
-![Github Created At](https://img.shields.io/github/created-at/MuhammadBobby/Lomba-ITechno-Cup-2024) ![GitHub last commit](https://img.shields.io/github/last-commit/MuhammadBobby/Lomba-ITechno-Cup-2024) ![GitHub language count](https://img.shields.io/github/languages/count/MuhammadBobby/Lomba-ITechno-Cup-2024) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/MuhammadBobby/Lomba-ITechno-Cup-2024)
+![Github Created At](https://img.shields.io/github/created-at/CodeLab-Indonesia/CodeLab-Indonesia.github.io) ![GitHub last commit](https://img.shields.io/github/last-commit/CodeLab-Indonesia/CodeLab-Indonesia.github.io) ![GitHub language count](https://img.shields.io/github/languages/count/CodeLab-Indonesia/CodeLab-Indonesia.github.io) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/CodeLab-Indonesia/CodeLab-Indonesia.github.io)
 
 ## 🌍 About
 

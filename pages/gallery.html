@@ -33,9 +33,9 @@
   </head>
   <body class="overflow-x-hidden font-poppins">
     <!-- header -->
-    <header id="custom-controls-gallery" class="relative w-full" data-carousel="slide" data-aos="fade-down">
+    <header id="custom-controls-gallery" class="relative w-full overflow-x-hidden" data-carousel="slide" data-aos="fade-down">
       <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden shadow-xl md:h-[30rem]">
+      <div class="relative h-56 overflow-hidden shadow-xl md:h-[30rem] block">
         <!-- gallery 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
           <img src="../src/images/gallery/gallery-7.jpg" title="Photo by Christopher Gower on Unsplash " class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
@@ -88,7 +88,7 @@
     <!-- end header -->
 
     <!-- body -->
-    <section class="flex flex-wrap items-center justify-around gap-5 px-10 py-10 mx-auto md:px-20 md:py-16 max-w-screen-2xl">
+    <section class="flex flex-wrap items-center justify-around gap-5 px-10 py-10 mx-auto overflow-x-hidden md:px-20 md:py-16 max-w-screen-2xl">
       <div class="w-full my-8 text-center lg:w-1/2 lg:text-left">
         <!-- head -->
         <h1 class="text-2xl font-bold text-primary font-montserrat md:text-4xl lg:text-5xl" data-aos="fade-down">Gallery <span class="text-secondary-yellow">Project</span></h1>
@@ -254,6 +254,7 @@
     <!-- JS (Javascript) -->
     <!-- flowbite -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

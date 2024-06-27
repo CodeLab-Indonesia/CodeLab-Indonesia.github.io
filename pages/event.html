@@ -30,7 +30,7 @@
   </head>
   <body class="overflow-x-hidden font-poppins">
     <!-- navbar -->
-    <div class="top-0 left-0 flex items-center w-full fixed z-[999] font-montserrat font-normal navbar-fixed overflow-x-hidden" id="header" data-aos="fade-down" data-aos-delay="500">
+    <div class="top-0 left-0 flex items-center w-full fixed z-[999] font-montserrat font-normal navbar-fixed" id="header" data-aos="fade-down" data-aos-delay="500">
       <div class="container">
         <div class="relative flex items-center justify-between mx-3 lg:mx-5">
           <div class="px-5">
@@ -45,7 +45,10 @@
               <span class="w-[30px] h-[2px] my-1.5 block bg-primary rounded-md transation duration-300 ease-in-out origin-bottom-left"></span>
             </a>
 
-            <nav id="nav-menu" class="hidden absolute py-5 ps-5 bg-white shadow-lg rounded-md max-w-[200px] w-full right-5 top-10 lg:block lg:static lg:bg-transparent lg:rounded-none lg:max-w-full lg:shadow-none transition duration-300">
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 ps-5 bg-white shadow-lg rounded-md max-w-[200px] w-full right-5 top-10 lg:block lg:static lg:bg-transparent lg:rounded-none lg:max-w-full lg:shadow-none transition duration-300 z-50"
+            >
               <ul id="nav" class="block lg:flex lg:justify-evenly">
                 <li class="group"><a href="#meetup" class="flex py-2 mx-8 text-base font-extrabold nav-item lg:underline lg:underline-offset-8 text-dark group-hover:text-secondary-yellow">Meet-Up</a></li>
                 <li class="group"><a href="#hackathon" class="flex py-2 mx-8 text-base nav-item text-dark group-hover:text-secondary-yellow">Hackathon</a></li>
@@ -64,7 +67,7 @@
     <!-- end navbar -->
 
     <!-- jumbotron -->
-    <section class="relative flex flex-col items-center justify-center h-screen px-5 overflow-x-hidden bg-primary">
+    <section class="relative flex flex-col items-center justify-center h-screen px-5 overflow-hidden bg-primary">
       <div class="text-center">
         <h1 id="hero-event" class="text-4xl font-bold text-white font-montserrat md:text-6xl lg:text-7xl">
           <!-- typeit -->
@@ -77,9 +80,9 @@
 
       <!-- star -->
       <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute -top-10 right-[1%] scale-[0.3] animate-pulse"></div>
-      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-ballon.svg')] absolute -bottom-10 left-[1%] md:left-[5%] z-50 md:scale-110 animate-up-down"></div>
-      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute -top[50%] -left-[5%] md:scale-110 animate-pulse"></div>
-      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute -top[50%] -right-[5%] md:scale-110 animate-pulse"></div>
+      <div class="h-[150px] w-[150px] bg-[url('../src/images/assets/astronot/astronot-ballon.svg')] absolute bg-cover bottom-0 left-[1%] md:left-[5%] z-50 md:scale-110 animate-up-down"></div>
+      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute top-0 -left-[5%] md:scale-110 animate-pulse"></div>
+      <div class="h-[200px] hidden md:block w-[200px] bg-[url('../src/images/assets/star/star-lamp.svg')] absolute top-0 -right-[5%] bg-cover md:scale-110 animate-pulse"></div>
 
       <!-- waves -->
       <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -bottom-2 rotate-180">
@@ -264,7 +267,7 @@
     <!-- end Hackaton -->
 
     <!-- webinar -->
-    <section id="webinar" class="relative px-5 py-10 pt-40 overflow-x-hidden md:pt-56 md:px-20 lg:px-28 md:py-16 bg-primary">
+    <section id="webinar" class="relative px-5 py-10 pt-40 overflow-hidden overflow-y-auto md:pt-56 md:px-20 lg:px-28 md:py-16 bg-primary">
       <!-- waves -->
       <div class="custom-shape-divider-bottom-1718713171 w-[150%] md:w-[100%] -top-2">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -366,7 +369,7 @@
       </div>
 
       <!-- other -->
-      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-fishing.svg')] absolute right-0 md:right-[5%] scale-50 md:scale-100 -top-20 animate-up-down"></div>
+      <div class="h-[100px] w-[100px] bg-cover bg-[url('../src/images/assets/astronot/astronot-fishing.svg')] absolute right-0 md:right-[5%] md:scale-125 top-10 animate-up-down"></div>
     </section>
     <!-- end webinar -->
 
@@ -427,12 +430,13 @@
 
       <!-- other -->
       <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute left-0 scale-[0.3] md:scale-50 -top-20 animate-pulse"></div>
-      <div class="hidden md:block h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-star.svg')] absolute right-[5%] -bottom-20 scale-125 animate-rotate-spin"></div>
     </section>
     <!-- end workshop -->
 
     <!-- footer -->
-    <footer class="pt-10 overflow-x-hidden bg-primary md:pt-20">
+    <footer class="relative pt-10 bg-primary md:pt-20">
+      <div class="hidden md:block h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-star.svg')] absolute right-[5%] -top-20 scale-125 animate-rotate-spin"></div>
+
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
         <div class="md:flex md:justify-between">

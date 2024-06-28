@@ -10,22 +10,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- tailwind CSS -->
-    <link rel="stylesheet" href="../src/style/output.css" />
+    <link rel="preload" href="../src/style/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/output.css" />
+    </noscript>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    </noscript>
 
     <!-- icons -->
-    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="https://kit.fontawesome.com/22f19496c5.js" as="script" />
 
     <!-- myCss-->
-    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="preload" href="../src/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/style.css" />
+    </noscript>
     <link rel="stylesheet" href="../src/style/lightbox.css" />
 
     <!-- AOS -->
@@ -38,7 +55,7 @@
       <div class="relative h-56 overflow-hidden shadow-xl md:h-[30rem]">
         <!-- Item 1 -->
         <a href="https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/" rel="noopener" target="_blank" class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="../src/images/project/Centering-Element-With-CSS.jpg" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+          <img src="../src/images/project/Centering-Element-With-CSS.webp" loading="lazy" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" loading="lazy" alt="" />
 
           <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
             <div class="text-center">
@@ -50,7 +67,7 @@
 
         <!-- Item 2 -->
         <a href="https://medium.com/@nweligalla/another-5-next-level-css-tricks-to-enhance-your-web-design-a5d256eee99f" rel="noopener" target="_blank" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../src/images/project/5-Next-Level-CSS-Tricks.webp" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 lg:h-auto top-1/2 left-1/2 brightness-75" alt="" />
+          <img src="../src/images/project/5-Next-Level-CSS-Tricks.webp" loading="lazy" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 lg:h-auto top-1/2 left-1/2 brightness-75" loading="lazy" alt="" />
 
           <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
             <div class="text-center">
@@ -62,7 +79,7 @@
 
         <!-- Item 3 -->
         <a href="https://www.create-learn.us/blog/how-to-make-ai-in-python-tutorial/" rel="noopener" target="_blank" class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../src/images/project/How-to-Make-AI-in-Python-Tutorial.png" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+          <img src="../src/images/project/How-to-Make-AI-in-Python-Tutorial.webp" loading="lazy" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" loading="lazy" alt="" />
 
           <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
             <div class="text-center">
@@ -109,7 +126,7 @@
           class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
           data-aos="fade-right"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Mini-Game-Using-Only-HTML-CSS-and-JavaScript.webp" alt="mini-game-using-only-html-css-and-javascript" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Mini-Game-Using-Only-HTML-CSS-and-JavaScript.webp" loading="lazy" alt="mini-game-using-only-html-css-and-javascript" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Mini-Game Using Only HTML, CSS and JavaScript</h5>
             <p class="mb-3 font-normal text-gray-700">1st step, Start by creating an HTML file and open it in a text editor....</p>
@@ -125,7 +142,7 @@
           data-aos="fade-left"
           data-aos-delay="100"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Automate-WhatsApp-Message-using-Python.webp" alt="automate-whatsapp-message-using-python-1ed97488ee60" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Automate-WhatsApp-Message-using-Python.webp" loading="lazy" alt="automate-whatsapp-message-using-python-1ed97488ee60" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Automate WhatsApp Message using Python</h5>
             <p class="mb-3 font-normal text-gray-700">Hey there, tech enthusiasts! Today, I’m thrilled to introduce you to an incredibly handy Python library that will make your messaging life a breeze — PyWhatKit...</p>
@@ -141,7 +158,7 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/membuat-pemutar-video-pada-html5.png" alt="membuat-pemutar-video-dengan-html" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/membuat-pemutar-video-pada-html5.webp" loading="lazy" alt="membuat-pemutar-video-dengan-html" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Creating a Video Player With HTML5</h5>
             <p class="mb-3 font-normal text-gray-700">Are you looking for a tutorial on how to make an online video player using only HTML? yep. Friend...</p>
@@ -185,7 +202,7 @@
           class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
           data-aos="fade-right"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/how-to-upload-your-website.png" alt="how-to-upload-your-website" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/how-to-upload-your-website.webp" loading="lazy" alt="how-to-upload-your-website" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">How to Upload a Website to Hosting, Just 6 Easy Steps!</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -204,7 +221,7 @@
           data-aos="fade-left"
           data-aos-delay="100"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/pengenalan-dan-tutorial-api.png" alt="pengenalan-dan-tutorial-api" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/pengenalan-dan-tutorial-api.webp" loading="lazy" alt="pengenalan-dan-tutorial-api" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Get to Know the API and its Implementation Tutorial</h5>
             <p class="mb-3 font-normal text-gray-700">Hi coders, this time we will discuss APIs that you may have often heard of but haven't or are still confused about their definition and use. So, the API is...</p>
@@ -220,7 +237,7 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/merancang-database.webp" alt="merancang-database" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/merancang-database.webp" loading="lazy" alt="merancang-database" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">How to Design a Database: Follow These 7 Steps!</h5>
             <p class="mb-3 font-normal text-gray-700">A database is a collection of information that will be stored in a computer systematically so that the data can be checked using a computer program...</p>
@@ -236,7 +253,7 @@
           data-aos="fade-left"
           data-aos-delay="300"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/tutorial-tailwind.png" alt="tutorial-tailwind" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/tutorial-tailwind.webp" loading="lazy" alt="tutorial-tailwind" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Tailwind Tutorial #1: Basic Tailwind CSS for Beginners</h5>
             <p class="mb-3 font-normal text-gray-700">Tailwind CSS is a utility-based CSS framework for creating UI or the appearance of web applications. Utility based means...</p>
@@ -266,7 +283,7 @@
           class="flex flex-col items-start w-full bg-white bg-opacity-70 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
           data-aos="fade-right"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Kontrol-Relay-via-Telegram.webp" alt="Kontrol-Relay-via-Telegram" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Kontrol-Relay-via-Telegram.webp" loading="lazy" alt="Kontrol-Relay-via-Telegram" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">ESP8266 IoT TelegramBot – Light Relay Control via Internet</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -284,7 +301,7 @@
           data-aos="fade-left"
           data-aos-delay="100"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/node-mcu-program-led.webp" alt="node-mcu-program-led" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/node-mcu-program-led.webp" loading="lazy" alt="node-mcu-program-led" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">IoT Tutorial: Creating the First Program on NodeMCU ESP8266</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -302,7 +319,7 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Membuat-Smart-Home-Berbasis-IoT.jpg" alt="Membuat-Smart-Home-Berbasis-IoT" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/Membuat-Smart-Home-Berbasis-IoT.webp" loading="lazy" alt="Membuat-Smart-Home-Berbasis-IoT" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Complete tutorial for making a smart home with Arduino</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -359,7 +376,7 @@
           class="flex flex-col items-start w-full bg-white border border-gray-200 rounded-lg shadow lg:w-[48%] md:flex-row hover:bg-gray-100 md:hover:scale-105 transition-all p-3"
           data-aos="fade-right"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/7-Langkah-Menjadi-UI-UX-Designer.png" alt="7-Langkah-Menjadi-UI-UX-Designer" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/7-Langkah-Menjadi-UI-UX-Designer.webp" loading="lazy" alt="7-Langkah-Menjadi-UI-UX-Designer" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">7 Steps to Becoming a UI UX Designer</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -377,7 +394,7 @@
           data-aos="fade-left"
           data-aos-delay="100"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/5-Langkah-Awal-menjadi-Seorang-Programmer.png" alt="5-Langkah-Awal-menjadi-Seorang-Programmer" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/5-Langkah-Awal-menjadi-Seorang-Programmer.webp" loading="lazy" alt="5-Langkah-Awal-menjadi-Seorang-Programmer" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">5 First Steps to Becoming a Programmer</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -395,7 +412,7 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/get-job-it.png" alt="get-job-it" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/get-job-it.webp" loading="lazy" alt="get-job-it" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">How to Get a Job in IT: 7 Steps</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -414,7 +431,7 @@
           data-aos="fade-left"
           data-aos-delay="300"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/integrasi-ai-dalam-project.webp" alt="integrasi-ai-dalam-project" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/integrasi-ai-dalam-project.webp" loading="lazy" alt="integrasi-ai-dalam-project" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Step by Step Guide: How to Integrate AI into Your Projects</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -432,7 +449,7 @@
           data-aos="fade-right"
           data-aos-delay="400"
         >
-          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/integrasi-wa-chatgpt.webp" alt="integrasi-wa-chatgpt" />
+          <img class="object-cover w-full h-auto mt-3 rounded-lg md:h-auto md:w-48" src="../src/images/project/integrasi-wa-chatgpt.webp" loading="lazy" alt="integrasi-wa-chatgpt" />
           <div class="flex flex-col justify-between leading-normal md:ms-3">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary font-montserrat">Here's an Easy Way to Use ChatGPT on WhatsApp</h5>
             <p class="mb-3 font-normal text-gray-700">
@@ -459,7 +476,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="flex items-center">
-              <img src="../src/images/assets/logo/code-lab.png" class="h-8 me-3" alt="FlowBite Logo" />
+              <img src="../src/images/assets/logo/code-lab.webp" class="h-8 me-3" loading="lazy" alt="FlowBite Logo" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary-yellow">Code Lab Community</span>
             </a>
           </div>
@@ -515,13 +532,12 @@
 
     <!-- back -->
     <a href="../index.html#diy" class="fixed bottom-0 block right-10 z-[999] hover:animate-pulse" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500">
-      <img src="../src/images/assets/back-button.svg" alt="back" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
+      <img src="../src/images/assets/back-button.svg" loading="lazy" alt="back" loading="lazy" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
     </a>
 
     <!-- JS (Javascript) -->
     <!-- flowbite -->
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="../src/js/flowbite.min.js" defer></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -532,6 +548,6 @@
     </script>
 
     <!-- myJS -->
-    <script src="../src/js/navbar.js"></script>
+    <script src="../src/js/navbar.js" defer></script>
   </body>
 </html>

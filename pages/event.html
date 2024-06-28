@@ -10,19 +10,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- tailwind CSS -->
-    <link rel="stylesheet" href="../src/style/output.css" />
+    <link rel="preload" href="../src/style/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/output.css" />
+    </noscript>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- flowbite -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    </noscript>
+
     <!-- icons -->
-    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="https://kit.fontawesome.com/22f19496c5.js" as="script" />
 
     <!-- myCss-->
-    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="preload" href="../src/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/style.css" />
+    </noscript>
     <link rel="stylesheet" href="../src/style/lightbox.css" />
 
     <!-- AOS -->
@@ -35,7 +55,7 @@
         <div class="relative flex items-center justify-between mx-3 lg:mx-5">
           <div class="px-5">
             <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="block py-3 text-lg font-bold cursor-pointer text-sky-500 lg:text-xl">
-              <img src="../src/images/assets/logo/code-lab.png" alt="Code Lab" class="h-8 lg:w-20" />
+              <img src="../src/images/assets/logo/code-lab.webp" alt="Code Lab" loading="lazy" class="h-8 lg:w-20" />
             </a>
           </div>
           <div class="flex items-center">
@@ -59,7 +79,7 @@
           </div>
 
           <a href="https://github.com/CodeLab-Indonesia" rel="noopener" target="_blank" class="inline-block">
-            <img src="../src/images/assets/github-dark.svg" alt="github-dark" class="hidden w-8 h-8 lg:block" />
+            <img src="../src/images/assets/github-dark.svg" alt="github-dark" loading="lazy" class="hidden w-8 h-8 lg:block" />
           </a>
         </div>
       </div>
@@ -442,7 +462,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="flex items-center">
-              <img src="../src/images/assets/logo/code-lab.png" class="h-8 me-3" alt="FlowBite Logo" />
+              <img src="../src/images/assets/logo/code-lab.webp" alt="Code Lab logo" loading="lazy" class="h-8 me-3" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary-yellow">Code Lab Community</span>
             </a>
           </div>
@@ -498,12 +518,12 @@
 
     <!-- back -->
     <a href="../index.html#other" class="fixed bottom-0 block right-10 z-[999] hover:animate-pulse" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500">
-      <img src="../src/images/assets/back-button.svg" alt="back" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
+      <img src="../src/images/assets/back-button.svg" alt="back" loading="lazy" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
     </a>
 
     <!-- JS (Javascript) -->
     <!-- flowbite -->
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../src/js/flowbite.min.js" defer></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -514,11 +534,11 @@
     </script>
 
     <!-- typeit js -->
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <script src="../src/js/typeit-event.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+    <script src="../src/js/typeit-event.js" defer></script>
 
     <!-- myJS -->
-    <script src="../src/js/script.js"></script>
-    <script src="../src/js/navbar.js"></script>
+    <script src="../src/js/script.js" defer></script>
+    <script src="../src/js/navbar.js" defer></script>
   </body>
 </html>

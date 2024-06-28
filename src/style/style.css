@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+  font-display: swap;
+}
+
 /* navbar */
 .navbar-fixed {
   /* @apply fixed z-[999] bg-white bg-opacity-50 shadow-sm; */
@@ -32,7 +37,7 @@
 
 /* hero */
 .hero-image {
-  background-image: url("../images/hero-contact/bg-jumbo.png");
+  background-image: url("../images/hero-contact/bg-jumbo.webp");
 }
 
 /* gallery */
@@ -46,6 +51,7 @@
   position: absolute;
   left: 0;
   overflow: hidden;
+  overflow-x: hidden;
   line-height: 0;
 }
 
@@ -80,7 +86,7 @@
 @keyframes up-down {
   0%,
   100% {
-    transform: translateY(-40%);
+    transform: translateY(-20%);
   }
   50% {
     transform: none;

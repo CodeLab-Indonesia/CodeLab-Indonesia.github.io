@@ -10,22 +10,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <!-- tailwind CSS -->
-    <link rel="stylesheet" href="../src/style/output.css" />
+    <link rel="preload" href="../src/style/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/output.css" />
+    </noscript>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    </noscript>
 
     <!-- icons -->
-    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="https://kit.fontawesome.com/22f19496c5.js" as="script" />
 
     <!-- myCss-->
-    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="preload" href="../src/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/style.css" />
+    </noscript>
     <link rel="stylesheet" href="../src/style/lightbox.css" />
 
     <!-- AOS -->
@@ -38,7 +55,7 @@
       <div class="relative h-56 overflow-hidden shadow-xl md:h-[30rem] block">
         <!-- gallery 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="../src/images/gallery/gallery-7.jpg" title="Photo by Christopher Gower on Unsplash " class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+          <img src="../src/images/gallery/gallery-7.webp" title="Photo by Christopher Gower on Unsplash " loading="lazy" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
 
           <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
             <div class="text-center">
@@ -50,7 +67,7 @@
 
         <!-- gallery 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../src/images/gallery/gallery-8.jpg" title="Photo by Alexandru Acea on Unsplash" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+          <img src="../src/images/gallery/gallery-8.webp" title="Photo by Alexandru Acea on Unsplash" loading="lazy" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
 
           <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
             <div class="text-center">
@@ -62,7 +79,7 @@
 
         <!-- gallery 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../src/images/gallery/gallery-9.jpg" title="Photo by Fotis Fotopoulos on Unsplash " class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+          <img src="../src/images/gallery/gallery-9.webp" title="Photo by Fotis Fotopoulos on Unsplash " loading="lazy" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
 
           <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
             <div class="text-center">
@@ -74,7 +91,7 @@
 
         <!-- gallery 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="../src/images/gallery/gallery-10.jpg" title="Photo by Chris Ried on Unsplash " class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
+          <img src="../src/images/gallery/gallery-10.webp" title="Photo by Chris Ried on Unsplash " loading="lazy" class="absolute block w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-75" alt="" />
 
           <div class="absolute top-0 bottom-0 left-0 flex items-center justify-center w-full p-4 text-white bg-gray-700 bg-opacity-50">
             <div class="text-center">
@@ -105,10 +122,10 @@
       </div>
 
       <div class="grid w-full grid-cols-2 gap-1 my-8 lg:w-1/3" data-aos="fade-left" data-aos-delay="200">
-        <img src="../src/images/gallery/gallery-11.jpg" alt="picture not found" class="rounded-tr-[3.5rem] rounded-bl-[3.5rem]" />
-        <img src="../src/images/gallery/gallery-12.jpg" alt="picture not found" class="rounded-tl-[3.5rem] rounded-br-[3.5rem]" />
-        <img src="../src/images/gallery/gallery-13.jpg" alt="picture not found" class="rounded-tl-[3.5rem] rounded-br-[3.5rem]" />
-        <img src="../src/images/gallery/gallery-14.jpg" alt="picture not found" class="rounded-tr-[3.5rem] rounded-bl-[3.5rem]" />
+        <img src="../src/images/gallery/gallery-11.webp" loading="lazy" alt="picture not found" class="rounded-tr-[3.5rem] rounded-bl-[3.5rem]" />
+        <img src="../src/images/gallery/gallery-12.webp" loading="lazy" alt="picture not found" class="rounded-tl-[3.5rem] rounded-br-[3.5rem]" />
+        <img src="../src/images/gallery/gallery-13.webp" loading="lazy" alt="picture not found" class="rounded-tl-[3.5rem] rounded-br-[3.5rem]" />
+        <img src="../src/images/gallery/gallery-14.webp" loading="lazy" alt="picture not found" class="rounded-tr-[3.5rem] rounded-bl-[3.5rem]" />
       </div>
     </section>
     <!-- end body -->
@@ -117,69 +134,69 @@
     <div class="grid grid-cols-2 gap-4 px-8 py-10 md:grid-cols-4 md:py-16 md:px-14">
       <div class="grid gap-4">
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-1.jpg" data-lightbox="models" data-title="UX Design by Procreator">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-1.jpg" alt="image not found" title="Photo by Procreator UX Design Studio on Unsplash" data-aos="fade-up" />
+          <a href="../src/images/gallery/gallery-1.webp" data-lightbox="models" data-title="UX Design by Procreator">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-1.webp" loading="lazy" alt="image not found" title="Photo by Procreator UX Design Studio on Unsplash" data-aos="fade-up" />
           </a>
         </div>
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-15.jpg" data-lightbox="models" data-title="Code Error by Florian Olivo">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-15.jpg" alt="image not found" title="Photo by Florian Olivo on Unsplash" data-aos="fade-up" data-aos-delay="100" />
+          <a href="../src/images/gallery/gallery-15.webp" data-lightbox="models" data-title="Code Error by Florian Olivo">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-15.webp" loading="lazy" alt="image not found" title="Photo by Florian Olivo on Unsplash" data-aos="fade-up" data-aos-delay="100" />
           </a>
         </div>
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-16.jpg" data-lightbox="models" data-title="Ideas From Coding by Oskar Yildiz">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-16.jpg" alt="image not found" title="Photo by Oskar Yildiz on Unsplash" data-aos="fade-up" data-aos-delay="200" />
-          </a>
-        </div>
-      </div>
-      <div class="grid gap-4">
-        <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-17.jpg" data-lightbox="models" data-title="code glasses by Kevin Ku">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-17.jpg" alt="Photo by Kevin Ku on Unsplash" data-aos="fade-up" data-aos-delay="100" />
-          </a>
-        </div>
-        <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-2.jpg" data-lightbox="models" data-title="Programming Freelancer by Tai Bui">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-2.jpg" alt="image not found" title="Photo by Tai Bui on Unsplash" data-aos="fade-up" data-aos-delay="200" />
-          </a>
-        </div>
-        <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-18.jpg" data-lightbox="models" data-title="Dark & Glow by Joshua Reddekopp">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-18.jpg" alt="image not found" title="Photo by Joshua Reddekopp on Unsplash " data-aos="fade-up" data-aos-delay="300" />
+          <a href="../src/images/gallery/gallery-16.webp" data-lightbox="models" data-title="Ideas From Coding by Oskar Yildiz">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-16.webp" loading="lazy" alt="image not found" title="Photo by Oskar Yildiz on Unsplash" data-aos="fade-up" data-aos-delay="200" />
           </a>
         </div>
       </div>
       <div class="grid gap-4">
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-3.jpg" data-lightbox="models" data-title="Coding Fashion by Arif Riyanto">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-3.jpg" alt="image not found" title="Photo by Arif Riyanto on Unsplash" data-aos="fade-up" data-aos-delay="200" />
+          <a href="../src/images/gallery/gallery-17.webp" data-lightbox="models" data-title="code glasses by Kevin Ku">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-17.webp" loading="lazy" alt="Photo by Kevin Ku on Unsplash" data-aos="fade-up" data-aos-delay="100" />
           </a>
         </div>
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-19.jpg" data-lightbox="models" data-title="Orkestra Coding by AltumCode">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-19.jpg" alt="image not found" title="Photo by AltumCode on Unsplash" data-aos="fade-up" data-aos-delay="300" />
+          <a href="../src/images/gallery/gallery-2.webp" data-lightbox="models" data-title="Programming Freelancer by Tai Bui">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-2.webp" loading="lazy" alt="image not found" title="Photo by Tai Bui on Unsplash" data-aos="fade-up" data-aos-delay="200" />
           </a>
         </div>
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-20.jpg" data-lightbox="models" data-title="After Clean by Caspar Camille Rubin">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-20.jpg" alt="image not found" title="Photo by Caspar Camille Rubin on Unsplash" data-aos="fade-up" data-aos-delay="400" />
+          <a href="../src/images/gallery/gallery-18.webp" data-lightbox="models" data-title="Dark & Glow by Joshua Reddekopp">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-18.webp" loading="lazy" alt="image not found" title="Photo by Joshua Reddekopp on Unsplash " data-aos="fade-up" data-aos-delay="300" />
           </a>
         </div>
       </div>
       <div class="grid gap-4">
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-7.jpg" data-lightbox="models" data-title="With my Setup Code by Christopher Gower">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-7.jpg" alt="image not found" title="Photo by Christopher Gower on Unsplash" data-aos="fade-up" data-aos-delay="300" />
+          <a href="../src/images/gallery/gallery-3.webp" data-lightbox="models" data-title="Coding Fashion by Arif Riyanto">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-3.webp" loading="lazy" alt="image not found" title="Photo by Arif Riyanto on Unsplash" data-aos="fade-up" data-aos-delay="200" />
           </a>
         </div>
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-4.jpg" data-lightbox="models" data-title="Cute Programmer by Tai Bui">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-4.jpg" alt="image not found" title="Photo by Tai Bui on Unsplash" data-aos="fade-up" data-aos-delay="400" />
+          <a href="../src/images/gallery/gallery-19.webp" data-lightbox="models" data-title="Orkestra Coding by AltumCode">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-19.webp" loading="lazy" alt="image not found" title="Photo by AltumCode on Unsplash" data-aos="fade-up" data-aos-delay="300" />
           </a>
         </div>
         <div class="relative overflow-hidden group">
-          <a href="../src/images/gallery/gallery-8.jpg" data-lightbox="models" data-title="Coding is My Life by Alexandru Acea">
-            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-8.jpg" alt="image not found" title="Photo by Alexandru Acea on Unsplash" data-aos="fade-up" data-aos-delay="500" />
+          <a href="../src/images/gallery/gallery-20.webp" data-lightbox="models" data-title="After Clean by Caspar Camille Rubin">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-20.webp" loading="lazy" alt="image not found" title="Photo by Caspar Camille Rubin on Unsplash" data-aos="fade-up" data-aos-delay="400" />
+          </a>
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div class="relative overflow-hidden group">
+          <a href="../src/images/gallery/gallery-7.webp" data-lightbox="models" data-title="With my Setup Code by Christopher Gower">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-7.webp" loading="lazy" alt="image not found" title="Photo by Christopher Gower on Unsplash" data-aos="fade-up" data-aos-delay="300" />
+          </a>
+        </div>
+        <div class="relative overflow-hidden group">
+          <a href="../src/images/gallery/gallery-4.webp" data-lightbox="models" data-title="Cute Programmer by Tai Bui">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-4.webp" loading="lazy" alt="image not found" title="Photo by Tai Bui on Unsplash" data-aos="fade-up" data-aos-delay="400" />
+          </a>
+        </div>
+        <div class="relative overflow-hidden group">
+          <a href="../src/images/gallery/gallery-8.webp" data-lightbox="models" data-title="Coding is My Life by Alexandru Acea">
+            <img class="h-auto max-w-full rounded-lg" src="../src/images/gallery/gallery-8.webp" loading="lazy" alt="image not found" title="Photo by Alexandru Acea on Unsplash" data-aos="fade-up" data-aos-delay="500" />
           </a>
         </div>
       </div>
@@ -192,7 +209,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="https://instagram.com/code.lab_indonesia" rel="noopener" target="_blank" class="flex items-center">
-              <img src="../src/images/assets/logo/code-lab.png" class="h-8 me-3" alt="FlowBite Logo" />
+              <img src="../src/images/assets/logo/code-lab.webp" class="h-8 me-3" loading="lazy" alt="FlowBite Logo" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap text-secondary-yellow">Code Lab Community</span>
             </a>
           </div>
@@ -248,13 +265,12 @@
 
     <!-- back -->
     <a href="../index.html#gallery" class="fixed bottom-0 block right-10 z-[999] hover:animate-pulse" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="2500">
-      <img src="../src/images/assets/back-button.svg" alt="back" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
+      <img src="../src/images/assets/back-button.svg" alt="back" loading="lazy" class="w-20 transition-all md:w-32 opacity-60 hover:opacity-100 hover:scale-110" />
     </a>
 
     <!-- JS (Javascript) -->
     <!-- flowbite -->
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="../src/js/flowbite.min.js" defer></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -265,6 +281,6 @@
     </script>
 
     <!-- lightbox gallery -->
-    <script src="../src/js/lightbox-plus-jquery.js"></script>
+    <script src="../src/js/lightbox-plus-jquery.js" defer></script>
   </body>
 </html>

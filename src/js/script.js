@@ -4,6 +4,15 @@ const scrollContainer = document.querySelector(".overflow-x-scroll");
 const scrollLeftBtn = document.getElementById("scrollLeftBtn");
 const scrollRightBtn = document.getElementById("scrollRightBtn");
 
+// for handle login/logout
+const loginTrueElements = document.querySelectorAll(".login-true");
+const loginFalseElements = document.querySelectorAll(".login-false");
+const usernameElement = document.querySelectorAll(".username");
+const logoutButtons = document.querySelectorAll(".log-out");
+// Periksa status login di localStorage
+const isLoggedIn = localStorage.getItem("login") === "true";
+const username = localStorage.getItem("username");
+
 // //navbar ketika di scroll
 window.onscroll = function () {
   const header = document.getElementById("header");
@@ -48,3 +57,51 @@ scrollRightBtn.addEventListener("click", function () {
     behavior: "smooth", // Animasi scroll
   });
 });
+
+// handle status login / logout
+if (isLoggedIn) {
+  // Jika login true
+  loginTrueElements.forEach((element) => {
+    element.classList.remove("hidden");
+    element.classList.add("inline-flex");
+  });
+
+  loginFalseElements.forEach((element) => {
+    element.classList.remove("inline-flex");
+    element.classList.add("hidden");
+  });
+
+  usernameElement.forEach((element) => (element.textContent = username.slice(0, 15)));
+} else {
+  // Jika login false
+  loginTrueElements.forEach((element) => {
+    element.classList.remove("inline-flex");
+    element.classList.add("hidden");
+  });
+
+  loginFalseElements.forEach((element) => {
+    element.classList.remove("hidden");
+    element.classList.add("inline-flex");
+  });
+}
+
+// Tambahkan event listener untuk tombol logout
+logoutButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    localStorage.clear();
+    location.reload();
+  });
+});
+
+// sweet alert
+if (window.location.hash === "#success=true") {
+  Swal.fire({
+    title: "Success!",
+    text: "Your idea has been added!",
+    icon: "success",
+    confirmButtonText: "OK",
+  });
+
+  // lalu hapus hash
+  window.location.hash = "";
+}

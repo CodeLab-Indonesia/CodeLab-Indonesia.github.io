@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../src/images/assets/logo/favicon.png" />
+    <title>Sign In | Code Lab Community</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" href="../src/style/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/output.css" />
+    </noscript>
+
+    <!-- flowbite -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    </noscript>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+
+    <!-- myCss-->
+    <link rel="preload" href="../src/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/style.css" />
+    </noscript>
+    <link rel="stylesheet" href="../src/style/lightbox.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden font-poppins">
+    <section class="relative w-screen h-screen overflow-hidden bg-cover hero-image bg-slate-400 bg-blend-multiply">
+      <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+        <div class="w-full bg-white bg-opacity-[0.3] rounded-lg shadow backdrop-blur-sm border md:mt-0 sm:max-w-md xl:p-0" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1 class="text-xl font-bold leading-tight tracking-tight text-primary md:text-2xl">Sign in to your account</h1>
+
+            <form id="loginForm" class="space-y-4 md:space-y-6">
+              <div>
+                <label for="username" class="block mb-2 text-sm font-medium text-white">Your username</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="bg-gray-50 border border-broke-white text-primary rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5"
+                  placeholder="Jhon Doe"
+                  required=""
+                  autofocus
+                />
+              </div>
+              <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-white">Password</label>
+                <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-broke-white text-primary rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5" required="" />
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border rounded border-broke-white bg-gray-50 focus:ring-3 focus:ring-[#14213D]" />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="remember" class="text-broke-white">Remember me</label>
+                  </div>
+                </div>
+                <a href="#" class="text-sm font-medium text-primary hover:underline">Forgot password?</a>
+              </div>
+              <button type="submit" class="w-full bg-[#FCA311] text-white hover:bg-opacity-90 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/earth.svg')] absolute top-[60%] right-5 scale-110 animate-earth" data-aos="zoom-in" data-aos-duration="2000"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/moon.svg')] absolute hidden md:block bottom-10 left-12"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute hidden md:block top-10 right-12 scale-50 animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/astronot/astronot-star.svg')] absolute hidden scale-125 md:block bottom-32 left-24 animate-rotate-spin" data-aos="fade-up"></div>
+    </section>
+
+    <!-- JS (Javascript) -->
+    <!-- flowbite -->
+    <script src="../src/js/flowbite.min.js" defer></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+
+    <script src="../src/js/login.js" defer></script>
+  </body>
+</html>

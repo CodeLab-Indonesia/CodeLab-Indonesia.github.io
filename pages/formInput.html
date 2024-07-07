@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../src/images/assets/logo/favicon.png" />
+    <title>Form Input | Code Lab Community</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" href="../src/style/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/output.css" />
+    </noscript>
+
+    <!-- flowbite -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    </noscript>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+
+    <!-- myCss-->
+    <link rel="preload" href="../src/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="../src/style/style.css" />
+    </noscript>
+    <link rel="stylesheet" href="../src/style/lightbox.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden font-poppins">
+    <section class="relative min-h-screen bg-gradient-to-br from-primary to-secondary-blue">
+      <div class="flex items-center justify-between w-full p-6 md:px-12">
+        <a href="../index.html" class="flex items-center w-20 lg:w-32"><img src="../src/images/assets/logo/code-lab.webp" alt="Code Lab Logo" /></a>
+
+        <p class="text-sm font-semibold text-white username md:text-lg"></p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto 0 lg:py-10">
+        <!-- header -->
+        <header class="my-5 text-center">
+          <h1 class="text-2xl font-bold text-white font-montserrat md:text-4xl"><span class="text-secondary-yellow">Code Lab</span> Community</h1>
+          <p class="text-xs italic font-light text-white">Building <span class="text-secondary-yellow">Tomorrow</span>, One Code at a Time</p>
+        </header>
+        <div class="w-full md:w-3/4 bg-white bg-opacity-[0.3] rounded-lg shadow backdrop-blur-sm border md:mt-0">
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1 class="max-w-xl font-bold leading-tight tracking-tight md:tracking-wide text-md text-primary md:text-2xl">Share your best <span class="italic text-white">innovations and knowledge</span> about technology</h1>
+
+            <form id="formInput" class="space-y-4 md:space-y-6">
+              <div>
+                <label for="select" class="block mb-2 text-sm font-medium text-white">Select Category </label>
+                <select id="select" class="bg-gray-50 border border-broke-white text-[#14213D] text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5" required="" autofocus>
+                  <option selected>--Category--</option>
+                  <option value="1">Tutorial/DIY</option>
+                  <option value="2">Event Meet-up</option>
+                  <option value="3">Blog/News</option>
+                </select>
+              </div>
+              <div>
+                <label for="title" class="block mb-2 text-sm font-medium text-white">Title</label>
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  class="bg-gray-50 border border-broke-white text-primary text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5"
+                  placeholder="Techno tech..."
+                  required=""
+                />
+              </div>
+              <div>
+                <label for="paragraph1" class="block mb-2 text-sm font-medium text-white">Paragraph 1</label>
+                <textarea
+                  name="paragraph1"
+                  id="paragraph1"
+                  class="bg-gray-50 border border-broke-white text-primary text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5"
+                  placeholder="What do you want to share?"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <label for="paragraph2" class="block mb-2 text-sm font-medium text-white">Paragraph 2 (Optional)</label>
+                <textarea name="paragraph2" id="paragraph2" class="bg-gray-50 border border-broke-white text-primary text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5" placeholder="lorem ipsum..."></textarea>
+              </div>
+              <div>
+                <label for="paragraph3" class="block mb-2 text-sm font-medium text-white">Paragraph 3 (Optional)</label>
+                <textarea name="paragraph3" id="paragraph3" class="bg-gray-50 border border-broke-white text-primary text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5" placeholder="lorem ipsum..."></textarea>
+              </div>
+
+              <div>
+                <label for="date" class="block mb-2 text-sm font-medium text-white">Date</label>
+                <input type="date" name="date" id="date" class="bg-gray-50 border border-broke-white text-primary text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full" />
+              </div>
+              <div>
+                <label for="image" class="block mb-2 text-sm font-medium text-white">Image</label>
+                <input
+                  type="file"
+                  name="image"
+                  id="image"
+                  class="bg-gray-50 border border-broke-white text-primary text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full"
+                  accept="image/png, image/jpeg, image/jpg, image/webp"
+                />
+              </div>
+              <div>
+                <label for="link" class="block mb-2 text-sm font-medium text-white">Link Reference (Optional)</label>
+                <input type="text" name="link" id="link" class="bg-gray-50 border border-broke-white text-primary text-sm rounded-lg focus:ring-[#14213D] active:ring-[#14213D] block w-full p-2.5" placeholder="https://..." />
+              </div>
+              <button type="submit" class="w-full md:w-1/3 block bg-[#FCA311] text-white hover:bg-opacity-90 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Upload</button>
+
+              <p class="text-sm font-light text-broke-white md:text-base">Can't add ideas? <a href="../index.html" class="font-medium text-secondary-yellow hover:underline">Back to Home</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-white.svg')] absolute top-0 md:top-10 left-12 scale-50 animate-pulse"></div>
+      <div class="h-[200px] w-[200px] bg-[url('../src/images/assets/star/star-yellow.svg')] absolute hidden md:block top-1/3 right-12 scale-50 animate-pulse"></div>
+      <div class="h-[100px] w-[100px] bg-[url('../src/images/assets/astronot/astronot-rocket.svg')] bg-cover absolute hidden md:block top-1/2 left-12 animate-up-down-left"></div>
+      <div class="h-[100px] w-[100px] bg-[url('../src/images/assets/astronot/astronot-star.svg')] bg-cover absolute hidden md:block bottom-10 right-12 animate-rotate-spin"></div>
+    </section>
+
+    <!-- JS (Javascript) -->
+    <!-- flowbite -->
+    <script src="../src/js/flowbite.min.js" defer></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const username = localStorage.getItem("username");
+        document.querySelector(".username").textContent = username;
+
+        document.getElementById("formInput").addEventListener("submit", function (event) {
+          // Mencegah form submit default
+          event.preventDefault();
+
+          window.location.href = "../index.html#success=true";
+        });
+      });
+    </script>
+  </body>
+</html>

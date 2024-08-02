@@ -24,7 +24,7 @@ Start demo : [https://codelab-indonesia.github.io/](https://codelab-indonesia.gi
 
 ## ✅ Run Locally
 
-Clone the project into a local server like XAMPP or Laragon
+Clone the project into a local
 
 ```bash
   git clone https://github.com/MuhammadBobby/Lomba-ITechno-Cup-2024.git
